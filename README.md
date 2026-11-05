@@ -20,6 +20,15 @@ This repository keeps the shared benchmark harness and the two negative results:
 | 5 | Learned localization-failure warning | `health/` | LOTO AUROC 0.63, held-out AUROC 0.57 (chance 0.5): **negative** |
 | 6 | Sonar projected into the camera image | `sonar_cam/` | AFRL rig: scan plane never in camera view, no association: **negative** |
 
+### Negative results at a glance
+
+| Learned failure warning (`health/`) | Sonar in camera image (`sonar_cam/`) |
+|---|---|
+| <img src="docs/figures/health_auc_bars.png" width="480"> | <img src="docs/figures/sonar_geometry.png" width="480"> |
+| AUROC / AUPRC barely above chance, LOTO on NTNU underwater 2023 and held-out NTNU 2025; details and risk-vs-time plot in [`health/README.md`](health/README.md). | The scan plane sits 0.177 m ahead of the lens, perpendicular to the optical axis, so same-time sonar points are out of view; sweeps and overlays in [`sonar_cam/README.md`](sonar_cam/README.md). |
+
+Regenerate all figures: `python3 health/make_figures.py` and `python3 sonar_cam/make_figures.py` (the latter needs `sonar_cam/out/`, see its README).
+
 The ablation/baseline runners in `scripts/` (`uwct_ablate*.sh`, baselines) expect a built `uw-vio-dvl`.
 `scripts/evaluate.py` + `geometry.py` (ATE/RPE with hand-eye) are also vendored in `uw-vio-dvl`.
 

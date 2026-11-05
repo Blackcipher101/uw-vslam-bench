@@ -158,6 +158,16 @@ Rule baselines (identical in v0 and v1): AUROC 0.49-0.54 on every label set. Ala
 
 ![risk](results/v1/risk_plot.png)
 
+![AUROC and AUPRC, LOTO vs held-out](../docs/figures/health_auc_bars.png)
+
+*Figure 1. AUROC (left) and AUPRC (right) on the primary label (rel 7.58 cm/s, H = 5 s) for the frozen v0 feature set: LOTO on NTNU underwater 2023 (12 runs) against the held-out NTNU 2025 set (7 runs). Dashed lines are chance (AUROC 0.5; AUPRC = positive rate). Values from `results/v0/metrics.csv`. The held-out `tracked_1s low` bar is the post-hoc observation discussed below, not a frozen choice.*
+
+![Risk vs drift over time](../docs/figures/health_risk_time.png)
+
+*Figure 2. Out-of-fold GBT risk (v0 features) for h05 / NTNU underwater 2023 traj_06 against the measured drift rate and the y = 1 label windows. Regenerated from the ws1 logs by `run_health.py --feature-set v0` (metrics identical to `results/v0/metrics.csv`).*
+
+Regenerate: `python3 health/make_figures.py --results health/results/v0` (the risk-vs-time figure needs `plot_data.npz`, which `run_health.py --manifest health/manifest.json --feature-set v0 --out health/results/v0` writes; it is git-ignored).
+
 ### Reading
 
 - Signal is weak in both feature sets. v0 logistic regression: pooled AUROC 0.633, AUPRC 0.462 against 0.336 chance, 29 of 69 events detected at 0.89 FA/min, median lead 4.2 s.

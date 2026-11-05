@@ -62,6 +62,22 @@ Pose-free extrinsic search (same-time pairs, 6 deg SO(3) grid, both heading sign
 time-shifted null 201/208 (contrast picker, 8 deg grid: real 147/152 vs null 181/165). The real pairing never beats the null,
 so no correction can be estimated and none is reported. (`out/calib_svinpicker.json` holds a "refined" extrinsic: it fits noise, ignore.)
 
+## Figures
+
+![Scan plane vs camera FOV](../docs/figures/sonar_geometry.png)
+
+*Figure 1. Geometry from the SVIn extrinsic above (bus_outside left camera, 1600x1200, f = 1168 px): the scan plane is perpendicular to the optical axis at z = 0.177 m, so only the 0.24 m x 0.18 m patch of it inside the image footprint is visible, which corresponds to 0.13-0.40 m from the sonar head. Returns accepted by the baseline (range >= 0.5 m) therefore never project into the image at the same instant. Pinhole approximation, distortion ignored.*
+
+![Sweeps](../docs/figures/sonar_sweeps.png)
+
+*Figure 2. AFRL bus_outside, SVIn extrinsic: residual z_stereo - z_sonar vs accumulation window (left; the 4.2 s GT point has 0 pairs), and vs sonar time offset at a 20 s window (middle: median, right: inlier fraction). Data: `out/window_sweep_*.log`, `out/baseline_w20_{gt,vio}.json`.*
+
+![Overlay frames](../docs/figures/sonar_overlay_pair.png)
+
+*Figure 3. Overlay frames from `out/overlay_svin` (downscaled): no sonar point in the image at t = 100.1 s, and stale pings near the right image edge at t = 132.6 s.*
+
+Regenerate (after the commands above have filled `out/`): `python3 make_figures.py`
+
 ## Interpretation and limits
 - This data neither validates nor refutes the SVIn extrinsic: the overlapping pairs are stale and show no sonar/stereo association.
 - Not done: pose-dependent (windowed) extrinsic search; alternative mounts; independent check of stereo accuracy (murky
