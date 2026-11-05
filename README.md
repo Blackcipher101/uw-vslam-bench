@@ -8,10 +8,10 @@ live in their own repositories (below). All runs are offline (recorded bags); no
 
 | Project | Repository | Baseline result |
 |---|---|---|
-| Tightly coupled DVL that survives dropouts (+ the `uw_ct_vio` estimator) | `uw-vio-dvl` | 20 s camera blackout: mean ATE **3.88 m -> 0.66 m** with (simulated) DVL; no dropout scenario worse than no DVL |
-| CUDA KLT stereo front end | `uw-gpu-klt` | front end 2.0x (ws1) / 4.9x (laptop) faster, no end-to-end ATE loss |
-| Auto-generated inspection report (detector + VLM) | `uw-inspect-report` | context verifier confirms 8/8 true findings at precision 0.89 (crop-only: 0/8) |
-| In-water stereo calibration health check | `uw-calib-health` | differential mode: every >= 0.2 deg change detected, 0 false alarms |
+| Tightly coupled DVL that survives dropouts (+ the `uw_ct_vio` estimator) | [`uw-vio-dvl`](https://github.com/Blackcipher101/uw-vio-dvl) | 20 s camera blackout: mean ATE **3.88 m -> 0.66 m** with (simulated) DVL; no dropout scenario worse than no DVL |
+| CUDA KLT stereo front end | [`uw-gpu-klt`](https://github.com/Blackcipher101/uw-gpu-klt) | front end 2.0x (ws1) / 4.9x (laptop) faster, no end-to-end ATE loss |
+| Auto-generated inspection report (detector + VLM) | [`uw-inspect-report`](https://github.com/Blackcipher101/uw-inspect-report) | context verifier confirms 8/8 true findings at precision 0.89 (crop-only: 0/8) |
+| In-water stereo calibration health check | [`uw-calib-health`](https://github.com/Blackcipher101/uw-calib-health) | differential mode: every >= 0.2 deg change detected, 0 false alarms |
 
 This repository keeps the shared benchmark harness and the two negative results:
 
