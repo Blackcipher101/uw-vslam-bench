@@ -33,3 +33,15 @@ __pycache__/
 cyclonedds.log
 health/manifest.json
 *.out
+
+# Split into their own repos on 2026-11-05 (canonical copies there; the local dirs below are stale working copies)
+uw_ct_vio/
+gpu_frontend/
+inspect_report/
+calib_health/
+DESIGN_DVL.md
+DESIGN_V2.md
+DESIGN_PHASE2.md
+scripts/sim_dvl.py
+scripts/test_sim_dvl.py
+scripts/dvl_bench_ws1.sh
