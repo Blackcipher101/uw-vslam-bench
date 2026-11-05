@@ -1,0 +1,472 @@
+loaded ntnu23 h05/traj_01        frames  7416 valid-drift windows  2651 (133 s) recoveries 0
+loaded ntnu23 h05/traj_02        frames  7494 valid-drift windows  3614 (181 s) recoveries 0
+loaded ntnu23 h05/traj_03        frames  6373 valid-drift windows  3458 (173 s) recoveries 0
+loaded ntnu23 h05/traj_04        frames  8117 valid-drift windows  3199 (160 s) recoveries 0
+loaded ntnu23 h05/traj_05        frames  8032 valid-drift windows  2883 (144 s) recoveries 0
+loaded ntnu23 h05/traj_06        frames  6056 valid-drift windows  3313 (166 s) recoveries 0
+loaded ntnu23 nolcn/traj_01      frames  7416 valid-drift windows  2651 (133 s) recoveries 0
+loaded ntnu23 nolcn/traj_02      frames  7494 valid-drift windows  3614 (181 s) recoveries 0
+loaded ntnu23 nolcn/traj_03      frames  6373 valid-drift windows  3458 (173 s) recoveries 0
+loaded ntnu23 nolcn/traj_04      frames  8117 valid-drift windows  3199 (160 s) recoveries 0
+loaded ntnu23 nolcn/traj_05      frames  8032 valid-drift windows  2883 (144 s) recoveries 0
+loaded ntnu23 nolcn/traj_06      frames  6056 valid-drift windows  3313 (166 s) recoveries 0
+loaded ntnu25 h05/mclab_1        frames  7885 valid-drift windows  7654 (383 s) recoveries 1
+loaded ntnu25 h05/mclab_2        frames  7642 valid-drift windows  5935 (297 s) recoveries 1
+loaded ntnu25 h05/fjord_1        frames  6367 valid-drift windows  6142 (307 s) recoveries 1
+loaded ntnu25 h05/fjord_2        frames 11955 valid-drift windows  9706 (485 s) recoveries 0
+loaded ntnu25 h05/fjord_3        frames  7082 valid-drift windows  5388 (269 s) recoveries 0
+loaded ntnu25 h05/fjord_4        frames 11947 valid-drift windows  8094 (405 s) recoveries 0
+loaded ntnu25 h05/fjord_5        frames  9515 valid-drift windows  8696 (435 s) recoveries 0
+feature set v0: 68 features
+median window drift (h05, ntnu23) 2.53 cm/s -> rel threshold 7.58 cm/s, abs 5 cm/s
+
+=== label abs_H2: threshold 5.00 cm/s, horizon 2 s ===
+  select logreg param=0.01: LOTO pooled AUROC 0.597 AUPRC 0.572
+  select logreg param=0.1: LOTO pooled AUROC 0.587 AUPRC 0.564
+  select logreg param=1.0: LOTO pooled AUROC 0.581 AUPRC 0.559
+  select gbt param=3: LOTO pooled AUROC 0.572 AUPRC 0.517
+  select gbt param=5: LOTO pooled AUROC 0.564 AUPRC 0.508
+  fold abs_H2 logreg C=0.01            h05/traj_01        n  2625 pos 0.57 AUROC 0.764 AUPRC 0.827 events 13 det 0
+  fold abs_H2 logreg C=0.01            h05/traj_02        n  3606 pos 0.43 AUROC 0.522 AUPRC 0.518 events 20 det 2
+  fold abs_H2 logreg C=0.01            h05/traj_03        n  3382 pos 0.43 AUROC 0.592 AUPRC 0.552 events 17 det 1
+  fold abs_H2 logreg C=0.01            h05/traj_04        n  2994 pos 0.16 AUROC 0.840 AUPRC 0.567 events 6 det 0
+  fold abs_H2 logreg C=0.01            h05/traj_05        n  2972 pos 0.56 AUROC 0.479 AUPRC 0.622 events 16 det 1
+  fold abs_H2 logreg C=0.01            h05/traj_06        n  3316 pos 0.35 AUROC 0.635 AUPRC 0.486 events 16 det 2
+  fold abs_H2 logreg C=0.01            nolcn/traj_01      n  2751 pos 0.64 AUROC 0.762 AUPRC 0.863 events 18 det 6
+  fold abs_H2 logreg C=0.01            nolcn/traj_02      n  3554 pos 0.43 AUROC 0.579 AUPRC 0.562 events 19 det 5
+  fold abs_H2 logreg C=0.01            nolcn/traj_03      n  3522 pos 0.47 AUROC 0.677 AUPRC 0.652 events 20 det 14
+  fold abs_H2 logreg C=0.01            nolcn/traj_04      n  2938 pos 0.17 AUROC 0.755 AUPRC 0.497 events 7 det 0
+  fold abs_H2 logreg C=0.01            nolcn/traj_05      n  3333 pos 0.78 AUROC 0.485 AUPRC 0.811 events 26 det 3
+  fold abs_H2 logreg C=0.01            nolcn/traj_06      n  3351 pos 0.42 AUROC 0.667 AUPRC 0.577 events 17 det 4
+  held abs_H2 logreg C=0.01            h05/mclab_1        n  7759 pos 0.33 AUROC 0.484 AUPRC 0.308 events 28 det 27
+  held abs_H2 logreg C=0.01            h05/mclab_2        n  6105 pos 0.21 AUROC 0.668 AUPRC 0.296 events 17 det 17
+  held abs_H2 logreg C=0.01            h05/fjord_1        n  6234 pos 0.18 AUROC 0.492 AUPRC 0.207 events 17 det 17
+  held abs_H2 logreg C=0.01            h05/fjord_2        n  9998 pos 0.18 AUROC 0.469 AUPRC 0.158 events 19 det 19
+  held abs_H2 logreg C=0.01            h05/fjord_3        n  5382 pos 0.41 AUROC 0.532 AUPRC 0.425 events 22 det 22
+  held abs_H2 logreg C=0.01            h05/fjord_4        n  8177 pos 0.47 AUROC 0.553 AUPRC 0.571 events 31 det 31
+  held abs_H2 logreg C=0.01            h05/fjord_5        n  8779 pos 0.69 AUROC 0.557 AUPRC 0.719 events 34 det 34
+  fold abs_H2 gbt depth=3              h05/traj_01        n  2625 pos 0.57 AUROC 0.716 AUPRC 0.766 events 13 det 1
+  fold abs_H2 gbt depth=3              h05/traj_02        n  3606 pos 0.43 AUROC 0.565 AUPRC 0.583 events 20 det 4
+  fold abs_H2 gbt depth=3              h05/traj_03        n  3382 pos 0.43 AUROC 0.527 AUPRC 0.513 events 17 det 1
+  fold abs_H2 gbt depth=3              h05/traj_04        n  2994 pos 0.16 AUROC 0.576 AUPRC 0.182 events 6 det 0
+  fold abs_H2 gbt depth=3              h05/traj_05        n  2972 pos 0.56 AUROC 0.509 AUPRC 0.650 events 16 det 0
+  fold abs_H2 gbt depth=3              h05/traj_06        n  3316 pos 0.35 AUROC 0.642 AUPRC 0.503 events 16 det 1
+  fold abs_H2 gbt depth=3              nolcn/traj_01      n  2751 pos 0.64 AUROC 0.773 AUPRC 0.871 events 18 det 1
+  fold abs_H2 gbt depth=3              nolcn/traj_02      n  3554 pos 0.43 AUROC 0.512 AUPRC 0.508 events 19 det 5
+  fold abs_H2 gbt depth=3              nolcn/traj_03      n  3522 pos 0.47 AUROC 0.638 AUPRC 0.613 events 20 det 2
+  fold abs_H2 gbt depth=3              nolcn/traj_04      n  2938 pos 0.17 AUROC 0.614 AUPRC 0.206 events 7 det 0
+  fold abs_H2 gbt depth=3              nolcn/traj_05      n  3333 pos 0.78 AUROC 0.520 AUPRC 0.823 events 26 det 0
+  fold abs_H2 gbt depth=3              nolcn/traj_06      n  3351 pos 0.42 AUROC 0.723 AUPRC 0.617 events 17 det 0
+  held abs_H2 gbt depth=3              h05/mclab_1        n  7759 pos 0.33 AUROC 0.559 AUPRC 0.361 events 28 det 9
+  held abs_H2 gbt depth=3              h05/mclab_2        n  6105 pos 0.21 AUROC 0.606 AUPRC 0.294 events 17 det 13
+  held abs_H2 gbt depth=3              h05/fjord_1        n  6234 pos 0.18 AUROC 0.489 AUPRC 0.187 events 17 det 12
+  held abs_H2 gbt depth=3              h05/fjord_2        n  9998 pos 0.18 AUROC 0.544 AUPRC 0.232 events 19 det 14
+  held abs_H2 gbt depth=3              h05/fjord_3        n  5382 pos 0.41 AUROC 0.699 AUPRC 0.609 events 22 det 18
+  held abs_H2 gbt depth=3              h05/fjord_4        n  8177 pos 0.47 AUROC 0.523 AUPRC 0.479 events 31 det 23
+  held abs_H2 gbt depth=3              h05/fjord_5        n  8779 pos 0.69 AUROC 0.506 AUPRC 0.716 events 34 det 32
+  fold abs_H2 rule: vision_healthy==0  h05/traj_01        n  2625 pos 0.57 AUROC 0.500 AUPRC 0.570 events 13 det 0
+  fold abs_H2 rule: vision_healthy==0  h05/traj_02        n  3606 pos 0.43 AUROC 0.500 AUPRC 0.434 events 20 det 0
+  fold abs_H2 rule: vision_healthy==0  h05/traj_03        n  3382 pos 0.43 AUROC 0.500 AUPRC 0.435 events 17 det 0
+  fold abs_H2 rule: vision_healthy==0  h05/traj_04        n  2994 pos 0.16 AUROC 0.466 AUPRC 0.164 events 6 det 0
+  fold abs_H2 rule: vision_healthy==0  h05/traj_05        n  2972 pos 0.56 AUROC 0.536 AUPRC 0.590 events 16 det 0
+  fold abs_H2 rule: vision_healthy==0  h05/traj_06        n  3316 pos 0.35 AUROC 0.498 AUPRC 0.352 events 16 det 0
+  fold abs_H2 rule: vision_healthy==0  nolcn/traj_01      n  2751 pos 0.64 AUROC 0.499 AUPRC 0.641 events 18 det 0
+  fold abs_H2 rule: vision_healthy==0  nolcn/traj_02      n  3554 pos 0.43 AUROC 0.500 AUPRC 0.435 events 19 det 0
+  fold abs_H2 rule: vision_healthy==0  nolcn/traj_03      n  3522 pos 0.47 AUROC 0.499 AUPRC 0.467 events 20 det 0
+  fold abs_H2 rule: vision_healthy==0  nolcn/traj_04      n  2938 pos 0.17 AUROC 0.491 AUPRC 0.172 events 7 det 0
+  fold abs_H2 rule: vision_healthy==0  nolcn/traj_05      n  3333 pos 0.78 AUROC 0.534 AUPRC 0.790 events 26 det 0
+  fold abs_H2 rule: vision_healthy==0  nolcn/traj_06      n  3351 pos 0.42 AUROC 0.489 AUPRC 0.421 events 17 det 0
+  held abs_H2 rule: vision_healthy==0  h05/mclab_1        n  7759 pos 0.33 AUROC 0.522 AUPRC 0.355 events 28 det 0
+  held abs_H2 rule: vision_healthy==0  h05/mclab_2        n  6105 pos 0.21 AUROC 0.510 AUPRC 0.228 events 17 det 0
+  held abs_H2 rule: vision_healthy==0  h05/fjord_1        n  6234 pos 0.18 AUROC 0.520 AUPRC 0.214 events 17 det 0
+  held abs_H2 rule: vision_healthy==0  h05/fjord_2        n  9998 pos 0.18 AUROC 0.500 AUPRC 0.176 events 19 det 0
+  held abs_H2 rule: vision_healthy==0  h05/fjord_3        n  5382 pos 0.41 AUROC 0.502 AUPRC 0.416 events 22 det 0
+  held abs_H2 rule: vision_healthy==0  h05/fjord_4        n  8177 pos 0.47 AUROC 0.508 AUPRC 0.480 events 31 det 0
+  held abs_H2 rule: vision_healthy==0  h05/fjord_5        n  8779 pos 0.69 AUROC 0.504 AUPRC 0.697 events 34 det 0
+  fold abs_H2 rule: gated_frac_1s high h05/traj_01        n  2625 pos 0.57 AUROC 0.606 AUPRC 0.597 events 13 det 0
+  fold abs_H2 rule: gated_frac_1s high h05/traj_02        n  3606 pos 0.43 AUROC 0.450 AUPRC 0.404 events 20 det 0
+  fold abs_H2 rule: gated_frac_1s high h05/traj_03        n  3382 pos 0.43 AUROC 0.457 AUPRC 0.396 events 17 det 0
+  fold abs_H2 rule: gated_frac_1s high h05/traj_04        n  2994 pos 0.16 AUROC 0.338 AUPRC 0.116 events 6 det 0
+  fold abs_H2 rule: gated_frac_1s high h05/traj_05        n  2972 pos 0.56 AUROC 0.585 AUPRC 0.630 events 16 det 2
+  fold abs_H2 rule: gated_frac_1s high h05/traj_06        n  3316 pos 0.35 AUROC 0.509 AUPRC 0.365 events 16 det 2
+  fold abs_H2 rule: gated_frac_1s high nolcn/traj_01      n  2751 pos 0.64 AUROC 0.550 AUPRC 0.626 events 18 det 0
+  fold abs_H2 rule: gated_frac_1s high nolcn/traj_02      n  3554 pos 0.43 AUROC 0.551 AUPRC 0.466 events 19 det 0
+  fold abs_H2 rule: gated_frac_1s high nolcn/traj_03      n  3522 pos 0.47 AUROC 0.480 AUPRC 0.434 events 20 det 0
+  fold abs_H2 rule: gated_frac_1s high nolcn/traj_04      n  2938 pos 0.17 AUROC 0.498 AUPRC 0.209 events 7 det 1
+  fold abs_H2 rule: gated_frac_1s high nolcn/traj_05      n  3333 pos 0.78 AUROC 0.737 AUPRC 0.894 events 26 det 3
+  fold abs_H2 rule: gated_frac_1s high nolcn/traj_06      n  3351 pos 0.42 AUROC 0.467 AUPRC 0.421 events 17 det 1
+  held abs_H2 rule: gated_frac_1s high h05/mclab_1        n  7759 pos 0.33 AUROC 0.537 AUPRC 0.378 events 28 det 0
+  held abs_H2 rule: gated_frac_1s high h05/mclab_2        n  6105 pos 0.21 AUROC 0.469 AUPRC 0.278 events 17 det 1
+  held abs_H2 rule: gated_frac_1s high h05/fjord_1        n  6234 pos 0.18 AUROC 0.524 AUPRC 0.263 events 17 det 1
+  held abs_H2 rule: gated_frac_1s high h05/fjord_2        n  9998 pos 0.18 AUROC 0.581 AUPRC 0.239 events 19 det 0
+  held abs_H2 rule: gated_frac_1s high h05/fjord_3        n  5382 pos 0.41 AUROC 0.634 AUPRC 0.529 events 22 det 0
+  held abs_H2 rule: gated_frac_1s high h05/fjord_4        n  8177 pos 0.47 AUROC 0.527 AUPRC 0.528 events 31 det 0
+  held abs_H2 rule: gated_frac_1s high h05/fjord_5        n  8779 pos 0.69 AUROC 0.523 AUPRC 0.728 events 34 det 0
+  fold abs_H2 rule: tracked_1s low     h05/traj_01        n  2625 pos 0.57 AUROC 0.544 AUPRC 0.634 events 13 det 0
+  fold abs_H2 rule: tracked_1s low     h05/traj_02        n  3606 pos 0.43 AUROC 0.514 AUPRC 0.448 events 20 det 0
+  fold abs_H2 rule: tracked_1s low     h05/traj_03        n  3382 pos 0.43 AUROC 0.480 AUPRC 0.397 events 17 det 0
+  fold abs_H2 rule: tracked_1s low     h05/traj_04        n  2994 pos 0.16 AUROC 0.527 AUPRC 0.167 events 6 det 0
+  fold abs_H2 rule: tracked_1s low     h05/traj_05        n  2972 pos 0.56 AUROC 0.549 AUPRC 0.673 events 16 det 0
+  fold abs_H2 rule: tracked_1s low     h05/traj_06        n  3316 pos 0.35 AUROC 0.522 AUPRC 0.382 events 16 det 2
+  fold abs_H2 rule: tracked_1s low     nolcn/traj_01      n  2751 pos 0.64 AUROC 0.673 AUPRC 0.798 events 18 det 0
+  fold abs_H2 rule: tracked_1s low     nolcn/traj_02      n  3554 pos 0.43 AUROC 0.659 AUPRC 0.589 events 19 det 0
+  fold abs_H2 rule: tracked_1s low     nolcn/traj_03      n  3522 pos 0.47 AUROC 0.520 AUPRC 0.474 events 20 det 1
+  fold abs_H2 rule: tracked_1s low     nolcn/traj_04      n  2938 pos 0.17 AUROC 0.586 AUPRC 0.199 events 7 det 0
+  fold abs_H2 rule: tracked_1s low     nolcn/traj_05      n  3333 pos 0.78 AUROC 0.581 AUPRC 0.835 events 26 det 2
+  fold abs_H2 rule: tracked_1s low     nolcn/traj_06      n  3351 pos 0.42 AUROC 0.495 AUPRC 0.413 events 17 det 3
+  held abs_H2 rule: tracked_1s low     h05/mclab_1        n  7759 pos 0.33 AUROC 0.620 AUPRC 0.446 events 28 det 0
+  held abs_H2 rule: tracked_1s low     h05/mclab_2        n  6105 pos 0.21 AUROC 0.608 AUPRC 0.347 events 17 det 1
+  held abs_H2 rule: tracked_1s low     h05/fjord_1        n  6234 pos 0.18 AUROC 0.538 AUPRC 0.255 events 17 det 1
+  held abs_H2 rule: tracked_1s low     h05/fjord_2        n  9998 pos 0.18 AUROC 0.588 AUPRC 0.276 events 19 det 0
+  held abs_H2 rule: tracked_1s low     h05/fjord_3        n  5382 pos 0.41 AUROC 0.653 AUPRC 0.558 events 22 det 2
+  held abs_H2 rule: tracked_1s low     h05/fjord_4        n  8177 pos 0.47 AUROC 0.632 AUPRC 0.615 events 31 det 1
+  held abs_H2 rule: tracked_1s low     h05/fjord_5        n  8779 pos 0.69 AUROC 0.634 AUPRC 0.815 events 34 det 1
+
+=== label abs_H5: threshold 5.00 cm/s, horizon 5 s ===
+  select logreg param=0.01: LOTO pooled AUROC 0.633 AUPRC 0.786
+  select logreg param=0.1: LOTO pooled AUROC 0.630 AUPRC 0.784
+  select logreg param=1.0: LOTO pooled AUROC 0.627 AUPRC 0.783
+  select gbt param=3: LOTO pooled AUROC 0.586 AUPRC 0.721
+  select gbt param=5: LOTO pooled AUROC 0.566 AUPRC 0.698
+  fold abs_H5 logreg C=0.01            h05/traj_01        n  2885 pos 0.76 AUROC 0.842 AUPRC 0.946 events 11 det 0
+  fold abs_H5 logreg C=0.01            h05/traj_02        n  3792 pos 0.66 AUROC 0.558 AUPRC 0.770 events 14 det 2
+  fold abs_H5 logreg C=0.01            h05/traj_03        n  3667 pos 0.64 AUROC 0.636 AUPRC 0.768 events 12 det 4
+  fold abs_H5 logreg C=0.01            h05/traj_04        n  2854 pos 0.30 AUROC 0.736 AUPRC 0.621 events 6 det 1
+  fold abs_H5 logreg C=0.01            h05/traj_05        n  3453 pos 0.76 AUROC 0.569 AUPRC 0.851 events 16 det 2
+  fold abs_H5 logreg C=0.01            h05/traj_06        n  3406 pos 0.60 AUROC 0.648 AUPRC 0.759 events 13 det 3
+  fold abs_H5 logreg C=0.01            nolcn/traj_01      n  3322 pos 0.82 AUROC 0.845 AUPRC 0.961 events 15 det 5
+  fold abs_H5 logreg C=0.01            nolcn/traj_02      n  3722 pos 0.68 AUROC 0.581 AUPRC 0.774 events 14 det 8
+  fold abs_H5 logreg C=0.01            nolcn/traj_03      n  3897 pos 0.68 AUROC 0.710 AUPRC 0.829 events 14 det 12
+  fold abs_H5 logreg C=0.01            nolcn/traj_04      n  2822 pos 0.33 AUROC 0.707 AUPRC 0.640 events 7 det 1
+  fold abs_H5 logreg C=0.01            nolcn/traj_05      n  4036 pos 0.91 AUROC 0.563 AUPRC 0.945 events 17 det 4
+  fold abs_H5 logreg C=0.01            nolcn/traj_06      n  3493 pos 0.66 AUROC 0.750 AUPRC 0.853 events 12 det 4
+  held abs_H5 logreg C=0.01            h05/mclab_1        n  7796 pos 0.50 AUROC 0.507 AUPRC 0.474 events 20 det 20
+  held abs_H5 logreg C=0.01            h05/mclab_2        n  6202 pos 0.36 AUROC 0.742 AUPRC 0.569 events 15 det 15
+  held abs_H5 logreg C=0.01            h05/fjord_1        n  6246 pos 0.31 AUROC 0.501 AUPRC 0.336 events 13 det 13
+  held abs_H5 logreg C=0.01            h05/fjord_2        n 10057 pos 0.27 AUROC 0.453 AUPRC 0.237 events 16 det 16
+  held abs_H5 logreg C=0.01            h05/fjord_3        n  5346 pos 0.61 AUROC 0.538 AUPRC 0.635 events 12 det 12
+  held abs_H5 logreg C=0.01            h05/fjord_4        n  8187 pos 0.65 AUROC 0.575 AUPRC 0.732 events 16 det 16
+  held abs_H5 logreg C=0.01            h05/fjord_5        n  8785 pos 0.84 AUROC 0.589 AUPRC 0.863 events 16 det 16
+  fold abs_H5 gbt depth=3              h05/traj_01        n  2885 pos 0.76 AUROC 0.829 AUPRC 0.934 events 11 det 0
+  fold abs_H5 gbt depth=3              h05/traj_02        n  3792 pos 0.66 AUROC 0.598 AUPRC 0.778 events 14 det 2
+  fold abs_H5 gbt depth=3              h05/traj_03        n  3667 pos 0.64 AUROC 0.613 AUPRC 0.767 events 12 det 1
+  fold abs_H5 gbt depth=3              h05/traj_04        n  2854 pos 0.30 AUROC 0.549 AUPRC 0.298 events 6 det 0
+  fold abs_H5 gbt depth=3              h05/traj_05        n  3453 pos 0.76 AUROC 0.610 AUPRC 0.863 events 16 det 2
+  fold abs_H5 gbt depth=3              h05/traj_06        n  3406 pos 0.60 AUROC 0.629 AUPRC 0.755 events 13 det 0
+  fold abs_H5 gbt depth=3              nolcn/traj_01      n  3322 pos 0.82 AUROC 0.781 AUPRC 0.941 events 15 det 0
+  fold abs_H5 gbt depth=3              nolcn/traj_02      n  3722 pos 0.68 AUROC 0.517 AUPRC 0.744 events 14 det 3
+  fold abs_H5 gbt depth=3              nolcn/traj_03      n  3897 pos 0.68 AUROC 0.630 AUPRC 0.784 events 14 det 6
+  fold abs_H5 gbt depth=3              nolcn/traj_04      n  2822 pos 0.33 AUROC 0.533 AUPRC 0.317 events 7 det 0
+  fold abs_H5 gbt depth=3              nolcn/traj_05      n  4036 pos 0.91 AUROC 0.667 AUPRC 0.962 events 17 det 3
+  fold abs_H5 gbt depth=3              nolcn/traj_06      n  3493 pos 0.66 AUROC 0.715 AUPRC 0.834 events 12 det 1
+  held abs_H5 gbt depth=3              h05/mclab_1        n  7796 pos 0.50 AUROC 0.565 AUPRC 0.561 events 20 det 16
+  held abs_H5 gbt depth=3              h05/mclab_2        n  6202 pos 0.36 AUROC 0.590 AUPRC 0.460 events 15 det 15
+  held abs_H5 gbt depth=3              h05/fjord_1        n  6246 pos 0.31 AUROC 0.465 AUPRC 0.320 events 13 det 9
+  held abs_H5 gbt depth=3              h05/fjord_2        n 10057 pos 0.27 AUROC 0.483 AUPRC 0.275 events 16 det 13
+  held abs_H5 gbt depth=3              h05/fjord_3        n  5346 pos 0.61 AUROC 0.684 AUPRC 0.781 events 12 det 8
+  held abs_H5 gbt depth=3              h05/fjord_4        n  8187 pos 0.65 AUROC 0.593 AUPRC 0.720 events 16 det 13
+  held abs_H5 gbt depth=3              h05/fjord_5        n  8785 pos 0.84 AUROC 0.519 AUPRC 0.846 events 16 det 15
+  fold abs_H5 rule: vision_healthy==0  h05/traj_01        n  2885 pos 0.76 AUROC 0.499 AUPRC 0.764 events 11 det 0
+  fold abs_H5 rule: vision_healthy==0  h05/traj_02        n  3792 pos 0.66 AUROC 0.500 AUPRC 0.663 events 14 det 0
+  fold abs_H5 rule: vision_healthy==0  h05/traj_03        n  3667 pos 0.64 AUROC 0.500 AUPRC 0.638 events 12 det 0
+  fold abs_H5 rule: vision_healthy==0  h05/traj_04        n  2854 pos 0.30 AUROC 0.473 AUPRC 0.297 events 6 det 0
+  fold abs_H5 rule: vision_healthy==0  h05/traj_05        n  3453 pos 0.76 AUROC 0.536 AUPRC 0.772 events 16 det 0
+  fold abs_H5 rule: vision_healthy==0  h05/traj_06        n  3406 pos 0.60 AUROC 0.492 AUPRC 0.597 events 13 det 0
+  fold abs_H5 rule: vision_healthy==0  nolcn/traj_01      n  3322 pos 0.82 AUROC 0.499 AUPRC 0.820 events 15 det 0
+  fold abs_H5 rule: vision_healthy==0  nolcn/traj_02      n  3722 pos 0.68 AUROC 0.500 AUPRC 0.679 events 14 det 0
+  fold abs_H5 rule: vision_healthy==0  nolcn/traj_03      n  3897 pos 0.68 AUROC 0.499 AUPRC 0.681 events 14 det 0
+  fold abs_H5 rule: vision_healthy==0  nolcn/traj_04      n  2822 pos 0.33 AUROC 0.490 AUPRC 0.327 events 7 det 0
+  fold abs_H5 rule: vision_healthy==0  nolcn/traj_05      n  4036 pos 0.91 AUROC 0.534 AUPRC 0.920 events 17 det 0
+  fold abs_H5 rule: vision_healthy==0  nolcn/traj_06      n  3493 pos 0.66 AUROC 0.494 AUPRC 0.654 events 12 det 0
+  held abs_H5 rule: vision_healthy==0  h05/mclab_1        n  7796 pos 0.50 AUROC 0.514 AUPRC 0.513 events 20 det 0
+  held abs_H5 rule: vision_healthy==0  h05/mclab_2        n  6202 pos 0.36 AUROC 0.506 AUPRC 0.371 events 15 det 0
+  held abs_H5 rule: vision_healthy==0  h05/fjord_1        n  6246 pos 0.31 AUROC 0.512 AUPRC 0.327 events 13 det 0
+  held abs_H5 rule: vision_healthy==0  h05/fjord_2        n 10057 pos 0.27 AUROC 0.500 AUPRC 0.274 events 16 det 0
+  held abs_H5 rule: vision_healthy==0  h05/fjord_3        n  5346 pos 0.61 AUROC 0.502 AUPRC 0.611 events 12 det 0
+  held abs_H5 rule: vision_healthy==0  h05/fjord_4        n  8187 pos 0.65 AUROC 0.506 AUPRC 0.659 events 16 det 0
+  held abs_H5 rule: vision_healthy==0  h05/fjord_5        n  8785 pos 0.84 AUROC 0.504 AUPRC 0.843 events 16 det 0
+  fold abs_H5 rule: gated_frac_1s high h05/traj_01        n  2885 pos 0.76 AUROC 0.524 AUPRC 0.722 events 11 det 0
+  fold abs_H5 rule: gated_frac_1s high h05/traj_02        n  3792 pos 0.66 AUROC 0.481 AUPRC 0.645 events 14 det 0
+  fold abs_H5 rule: gated_frac_1s high h05/traj_03        n  3667 pos 0.64 AUROC 0.479 AUPRC 0.623 events 12 det 0
+  fold abs_H5 rule: gated_frac_1s high h05/traj_04        n  2854 pos 0.30 AUROC 0.441 AUPRC 0.254 events 6 det 0
+  fold abs_H5 rule: gated_frac_1s high h05/traj_05        n  3453 pos 0.76 AUROC 0.583 AUPRC 0.800 events 16 det 3
+  fold abs_H5 rule: gated_frac_1s high h05/traj_06        n  3406 pos 0.60 AUROC 0.478 AUPRC 0.587 events 13 det 3
+  fold abs_H5 rule: gated_frac_1s high nolcn/traj_01      n  3322 pos 0.82 AUROC 0.467 AUPRC 0.766 events 15 det 0
+  fold abs_H5 rule: gated_frac_1s high nolcn/traj_02      n  3722 pos 0.68 AUROC 0.534 AUPRC 0.657 events 14 det 0
+  fold abs_H5 rule: gated_frac_1s high nolcn/traj_03      n  3897 pos 0.68 AUROC 0.512 AUPRC 0.666 events 14 det 1
+  fold abs_H5 rule: gated_frac_1s high nolcn/traj_04      n  2822 pos 0.33 AUROC 0.596 AUPRC 0.404 events 7 det 1
+  fold abs_H5 rule: gated_frac_1s high nolcn/traj_05      n  4036 pos 0.91 AUROC 0.763 AUPRC 0.966 events 17 det 4
+  fold abs_H5 rule: gated_frac_1s high nolcn/traj_06      n  3493 pos 0.66 AUROC 0.486 AUPRC 0.662 events 12 det 1
+  held abs_H5 rule: gated_frac_1s high h05/mclab_1        n  7796 pos 0.50 AUROC 0.533 AUPRC 0.527 events 20 det 1
+  held abs_H5 rule: gated_frac_1s high h05/mclab_2        n  6202 pos 0.36 AUROC 0.437 AUPRC 0.368 events 15 det 1
+  held abs_H5 rule: gated_frac_1s high h05/fjord_1        n  6246 pos 0.31 AUROC 0.467 AUPRC 0.336 events 13 det 1
+  held abs_H5 rule: gated_frac_1s high h05/fjord_2        n 10057 pos 0.27 AUROC 0.550 AUPRC 0.336 events 16 det 1
+  held abs_H5 rule: gated_frac_1s high h05/fjord_3        n  5346 pos 0.61 AUROC 0.656 AUPRC 0.716 events 12 det 0
+  held abs_H5 rule: gated_frac_1s high h05/fjord_4        n  8187 pos 0.65 AUROC 0.594 AUPRC 0.761 events 16 det 0
+  held abs_H5 rule: gated_frac_1s high h05/fjord_5        n  8785 pos 0.84 AUROC 0.523 AUPRC 0.871 events 16 det 0
+  fold abs_H5 rule: tracked_1s low     h05/traj_01        n  2885 pos 0.76 AUROC 0.581 AUPRC 0.838 events 11 det 0
+  fold abs_H5 rule: tracked_1s low     h05/traj_02        n  3792 pos 0.66 AUROC 0.446 AUPRC 0.647 events 14 det 0
+  fold abs_H5 rule: tracked_1s low     h05/traj_03        n  3667 pos 0.64 AUROC 0.461 AUPRC 0.597 events 12 det 0
+  fold abs_H5 rule: tracked_1s low     h05/traj_04        n  2854 pos 0.30 AUROC 0.543 AUPRC 0.310 events 6 det 0
+  fold abs_H5 rule: tracked_1s low     h05/traj_05        n  3453 pos 0.76 AUROC 0.492 AUPRC 0.801 events 16 det 5
+  fold abs_H5 rule: tracked_1s low     h05/traj_06        n  3406 pos 0.60 AUROC 0.475 AUPRC 0.597 events 13 det 5
+  fold abs_H5 rule: tracked_1s low     nolcn/traj_01      n  3322 pos 0.82 AUROC 0.754 AUPRC 0.935 events 15 det 0
+  fold abs_H5 rule: tracked_1s low     nolcn/traj_02      n  3722 pos 0.68 AUROC 0.671 AUPRC 0.808 events 14 det 0
+  fold abs_H5 rule: tracked_1s low     nolcn/traj_03      n  3897 pos 0.68 AUROC 0.585 AUPRC 0.735 events 14 det 2
+  fold abs_H5 rule: tracked_1s low     nolcn/traj_04      n  2822 pos 0.33 AUROC 0.561 AUPRC 0.347 events 7 det 1
+  fold abs_H5 rule: tracked_1s low     nolcn/traj_05      n  4036 pos 0.91 AUROC 0.584 AUPRC 0.946 events 17 det 3
+  fold abs_H5 rule: tracked_1s low     nolcn/traj_06      n  3493 pos 0.66 AUROC 0.488 AUPRC 0.672 events 12 det 5
+  held abs_H5 rule: tracked_1s low     h05/mclab_1        n  7796 pos 0.50 AUROC 0.590 AUPRC 0.576 events 20 det 0
+  held abs_H5 rule: tracked_1s low     h05/mclab_2        n  6202 pos 0.36 AUROC 0.616 AUPRC 0.514 events 15 det 1
+  held abs_H5 rule: tracked_1s low     h05/fjord_1        n  6246 pos 0.31 AUROC 0.550 AUPRC 0.417 events 13 det 2
+  held abs_H5 rule: tracked_1s low     h05/fjord_2        n 10057 pos 0.27 AUROC 0.573 AUPRC 0.360 events 16 det 0
+  held abs_H5 rule: tracked_1s low     h05/fjord_3        n  5346 pos 0.61 AUROC 0.665 AUPRC 0.737 events 12 det 1
+  held abs_H5 rule: tracked_1s low     h05/fjord_4        n  8187 pos 0.65 AUROC 0.628 AUPRC 0.766 events 16 det 0
+  held abs_H5 rule: tracked_1s low     h05/fjord_5        n  8785 pos 0.84 AUROC 0.632 AUPRC 0.907 events 16 det 0
+
+=== label rel_H2: threshold 7.58 cm/s, horizon 2 s ===
+  select logreg param=0.01: LOTO pooled AUROC 0.530 AUPRC 0.203
+  select logreg param=0.1: LOTO pooled AUROC 0.527 AUPRC 0.202
+  select logreg param=1.0: LOTO pooled AUROC 0.524 AUPRC 0.201
+  select gbt param=3: LOTO pooled AUROC 0.448 AUPRC 0.175
+  select gbt param=5: LOTO pooled AUROC 0.472 AUPRC 0.185
+  fold rel_H2 logreg C=0.01            h05/traj_01        n  2316 pos 0.33 AUROC 0.632 AUPRC 0.420 events 9 det 0
+  fold rel_H2 logreg C=0.01            h05/traj_02        n  3325 pos 0.13 AUROC 0.557 AUPRC 0.270 events 7 det 1
+  fold rel_H2 logreg C=0.01            h05/traj_03        n  3114 pos 0.19 AUROC 0.531 AUPRC 0.188 events 9 det 0
+  fold rel_H2 logreg C=0.01            h05/traj_04        n  2825 pos 0.04 AUROC 0.715 AUPRC 0.065 events 2 det 0
+  fold rel_H2 logreg C=0.01            h05/traj_05        n  2547 pos 0.31 AUROC 0.483 AUPRC 0.319 events 7 det 0
+  fold rel_H2 logreg C=0.01            h05/traj_06        n  2926 pos 0.05 AUROC 0.699 AUPRC 0.105 events 3 det 0
+  fold rel_H2 logreg C=0.01            nolcn/traj_01      n  2288 pos 0.33 AUROC 0.669 AUPRC 0.476 events 8 det 0
+  fold rel_H2 logreg C=0.01            nolcn/traj_02      n  3271 pos 0.16 AUROC 0.734 AUPRC 0.264 events 9 det 1
+  fold rel_H2 logreg C=0.01            nolcn/traj_03      n  3156 pos 0.21 AUROC 0.478 AUPRC 0.186 events 10 det 4
+  fold rel_H2 logreg C=0.01            nolcn/traj_04      n  2792 pos 0.03 AUROC 0.908 AUPRC 0.125 events 1 det 0
+  fold rel_H2 logreg C=0.01            nolcn/traj_05      n  2774 pos 0.39 AUROC 0.523 AUPRC 0.409 events 12 det 1
+  fold rel_H2 logreg C=0.01            nolcn/traj_06      n  3039 pos 0.13 AUROC 0.648 AUPRC 0.255 events 7 det 2
+  held rel_H2 logreg C=0.01            h05/mclab_1        n  7759 pos 0.15 AUROC 0.534 AUPRC 0.175 events 15 det 15
+  held rel_H2 logreg C=0.01            h05/mclab_2        n  6105 pos 0.03 AUROC 0.855 AUPRC 0.173 events 3 det 3
+  held rel_H2 logreg C=0.01            h05/fjord_1        n  6234 pos 0.03 AUROC 0.688 AUPRC 0.176 events 3 det 3
+  held rel_H2 logreg C=0.01            h05/fjord_2        n  9966 pos 0.07 AUROC 0.477 AUPRC 0.062 events 11 det 11
+  held rel_H2 logreg C=0.01            h05/fjord_3        n  5382 pos 0.08 AUROC 0.440 AUPRC 0.070 events 8 det 8
+  held rel_H2 logreg C=0.01            h05/fjord_4        n  8156 pos 0.25 AUROC 0.545 AUPRC 0.315 events 26 det 26
+  held rel_H2 logreg C=0.01            h05/fjord_5        n  8779 pos 0.54 AUROC 0.536 AUPRC 0.585 events 35 det 35
+  fold rel_H2 gbt depth=5              h05/traj_01        n  2316 pos 0.33 AUROC 0.443 AUPRC 0.289 events 9 det 0
+  fold rel_H2 gbt depth=5              h05/traj_02        n  3325 pos 0.13 AUROC 0.683 AUPRC 0.449 events 7 det 3
+  fold rel_H2 gbt depth=5              h05/traj_03        n  3114 pos 0.19 AUROC 0.507 AUPRC 0.197 events 9 det 1
+  fold rel_H2 gbt depth=5              h05/traj_04        n  2825 pos 0.04 AUROC 0.223 AUPRC 0.023 events 2 det 0
+  fold rel_H2 gbt depth=5              h05/traj_05        n  2547 pos 0.31 AUROC 0.600 AUPRC 0.395 events 7 det 0
+  fold rel_H2 gbt depth=5              h05/traj_06        n  2926 pos 0.05 AUROC 0.784 AUPRC 0.103 events 3 det 0
+  fold rel_H2 gbt depth=5              nolcn/traj_01      n  2288 pos 0.33 AUROC 0.585 AUPRC 0.376 events 8 det 0
+  fold rel_H2 gbt depth=5              nolcn/traj_02      n  3271 pos 0.16 AUROC 0.556 AUPRC 0.169 events 9 det 2
+  fold rel_H2 gbt depth=5              nolcn/traj_03      n  3156 pos 0.21 AUROC 0.460 AUPRC 0.182 events 10 det 0
+  fold rel_H2 gbt depth=5              nolcn/traj_04      n  2792 pos 0.03 AUROC 0.389 AUPRC 0.019 events 1 det 0
+  fold rel_H2 gbt depth=5              nolcn/traj_05      n  2774 pos 0.39 AUROC 0.456 AUPRC 0.349 events 12 det 0
+  fold rel_H2 gbt depth=5              nolcn/traj_06      n  3039 pos 0.13 AUROC 0.573 AUPRC 0.186 events 7 det 0
+  held rel_H2 gbt depth=5              h05/mclab_1        n  7759 pos 0.15 AUROC 0.508 AUPRC 0.227 events 15 det 0
+  held rel_H2 gbt depth=5              h05/mclab_2        n  6105 pos 0.03 AUROC 0.421 AUPRC 0.029 events 3 det 0
+  held rel_H2 gbt depth=5              h05/fjord_1        n  6234 pos 0.03 AUROC 0.329 AUPRC 0.020 events 3 det 0
+  held rel_H2 gbt depth=5              h05/fjord_2        n  9966 pos 0.07 AUROC 0.448 AUPRC 0.058 events 11 det 0
+  held rel_H2 gbt depth=5              h05/fjord_3        n  5382 pos 0.08 AUROC 0.411 AUPRC 0.065 events 8 det 0
+  held rel_H2 gbt depth=5              h05/fjord_4        n  8156 pos 0.25 AUROC 0.558 AUPRC 0.271 events 26 det 4
+  held rel_H2 gbt depth=5              h05/fjord_5        n  8779 pos 0.54 AUROC 0.490 AUPRC 0.551 events 35 det 3
+  fold rel_H2 rule: vision_healthy==0  h05/traj_01        n  2316 pos 0.33 AUROC 0.500 AUPRC 0.332 events 9 det 0
+  fold rel_H2 rule: vision_healthy==0  h05/traj_02        n  3325 pos 0.13 AUROC 0.500 AUPRC 0.130 events 7 det 0
+  fold rel_H2 rule: vision_healthy==0  h05/traj_03        n  3114 pos 0.19 AUROC 0.500 AUPRC 0.195 events 9 det 0
+  fold rel_H2 rule: vision_healthy==0  h05/traj_04        n  2825 pos 0.04 AUROC 0.468 AUPRC 0.039 events 2 det 0
+  fold rel_H2 rule: vision_healthy==0  h05/traj_05        n  2547 pos 0.31 AUROC 0.547 AUPRC 0.347 events 7 det 0
+  fold rel_H2 rule: vision_healthy==0  h05/traj_06        n  2926 pos 0.05 AUROC 0.532 AUPRC 0.059 events 3 det 0
+  fold rel_H2 rule: vision_healthy==0  nolcn/traj_01      n  2288 pos 0.33 AUROC 0.500 AUPRC 0.332 events 8 det 0
+  fold rel_H2 rule: vision_healthy==0  nolcn/traj_02      n  3271 pos 0.16 AUROC 0.500 AUPRC 0.159 events 9 det 0
+  fold rel_H2 rule: vision_healthy==0  nolcn/traj_03      n  3156 pos 0.21 AUROC 0.499 AUPRC 0.210 events 10 det 0
+  fold rel_H2 rule: vision_healthy==0  nolcn/traj_04      n  2792 pos 0.03 AUROC 0.487 AUPRC 0.025 events 1 det 0
+  fold rel_H2 rule: vision_healthy==0  nolcn/traj_05      n  2774 pos 0.39 AUROC 0.560 AUPRC 0.453 events 12 det 0
+  fold rel_H2 rule: vision_healthy==0  nolcn/traj_06      n  3039 pos 0.13 AUROC 0.512 AUPRC 0.134 events 7 det 0
+  held rel_H2 rule: vision_healthy==0  h05/mclab_1        n  7759 pos 0.15 AUROC 0.548 AUPRC 0.227 events 15 det 0
+  held rel_H2 rule: vision_healthy==0  h05/mclab_2        n  6105 pos 0.03 AUROC 0.572 AUPRC 0.157 events 3 det 0
+  held rel_H2 rule: vision_healthy==0  h05/fjord_1        n  6234 pos 0.03 AUROC 0.625 AUPRC 0.272 events 3 det 0
+  held rel_H2 rule: vision_healthy==0  h05/fjord_2        n  9966 pos 0.07 AUROC 0.500 AUPRC 0.067 events 11 det 0
+  held rel_H2 rule: vision_healthy==0  h05/fjord_3        n  5382 pos 0.08 AUROC 0.501 AUPRC 0.084 events 8 det 0
+  held rel_H2 rule: vision_healthy==0  h05/fjord_4        n  8156 pos 0.25 AUROC 0.511 AUPRC 0.264 events 26 det 0
+  held rel_H2 rule: vision_healthy==0  h05/fjord_5        n  8779 pos 0.54 AUROC 0.501 AUPRC 0.542 events 35 det 0
+  fold rel_H2 rule: gated_frac_1s high h05/traj_01        n  2316 pos 0.33 AUROC 0.535 AUPRC 0.322 events 9 det 0
+  fold rel_H2 rule: gated_frac_1s high h05/traj_02        n  3325 pos 0.13 AUROC 0.405 AUPRC 0.103 events 7 det 0
+  fold rel_H2 rule: gated_frac_1s high h05/traj_03        n  3114 pos 0.19 AUROC 0.471 AUPRC 0.198 events 9 det 0
+  fold rel_H2 rule: gated_frac_1s high h05/traj_04        n  2825 pos 0.04 AUROC 0.125 AUPRC 0.022 events 2 det 0
+  fold rel_H2 rule: gated_frac_1s high h05/traj_05        n  2547 pos 0.31 AUROC 0.574 AUPRC 0.342 events 7 det 0
+  fold rel_H2 rule: gated_frac_1s high h05/traj_06        n  2926 pos 0.05 AUROC 0.468 AUPRC 0.095 events 3 det 1
+  fold rel_H2 rule: gated_frac_1s high nolcn/traj_01      n  2288 pos 0.33 AUROC 0.558 AUPRC 0.334 events 8 det 0
+  fold rel_H2 rule: gated_frac_1s high nolcn/traj_02      n  3271 pos 0.16 AUROC 0.518 AUPRC 0.171 events 9 det 0
+  fold rel_H2 rule: gated_frac_1s high nolcn/traj_03      n  3156 pos 0.21 AUROC 0.495 AUPRC 0.206 events 10 det 0
+  fold rel_H2 rule: gated_frac_1s high nolcn/traj_04      n  2792 pos 0.03 AUROC 0.641 AUPRC 0.033 events 1 det 0
+  fold rel_H2 rule: gated_frac_1s high nolcn/traj_05      n  2774 pos 0.39 AUROC 0.686 AUPRC 0.624 events 12 det 4
+  fold rel_H2 rule: gated_frac_1s high nolcn/traj_06      n  3039 pos 0.13 AUROC 0.540 AUPRC 0.237 events 7 det 2
+  held rel_H2 rule: gated_frac_1s high h05/mclab_1        n  7759 pos 0.15 AUROC 0.506 AUPRC 0.206 events 15 det 1
+  held rel_H2 rule: gated_frac_1s high h05/mclab_2        n  6105 pos 0.03 AUROC 0.641 AUPRC 0.374 events 3 det 2
+  held rel_H2 rule: gated_frac_1s high h05/fjord_1        n  6234 pos 0.03 AUROC 0.654 AUPRC 0.340 events 3 det 1
+  held rel_H2 rule: gated_frac_1s high h05/fjord_2        n  9966 pos 0.07 AUROC 0.604 AUPRC 0.136 events 11 det 0
+  held rel_H2 rule: gated_frac_1s high h05/fjord_3        n  5382 pos 0.08 AUROC 0.632 AUPRC 0.247 events 8 det 0
+  held rel_H2 rule: gated_frac_1s high h05/fjord_4        n  8156 pos 0.25 AUROC 0.502 AUPRC 0.310 events 26 det 1
+  held rel_H2 rule: gated_frac_1s high h05/fjord_5        n  8779 pos 0.54 AUROC 0.496 AUPRC 0.558 events 35 det 1
+  fold rel_H2 rule: tracked_1s low     h05/traj_01        n  2316 pos 0.33 AUROC 0.487 AUPRC 0.356 events 9 det 0
+  fold rel_H2 rule: tracked_1s low     h05/traj_02        n  3325 pos 0.13 AUROC 0.484 AUPRC 0.121 events 7 det 0
+  fold rel_H2 rule: tracked_1s low     h05/traj_03        n  3114 pos 0.19 AUROC 0.427 AUPRC 0.158 events 9 det 0
+  fold rel_H2 rule: tracked_1s low     h05/traj_04        n  2825 pos 0.04 AUROC 0.708 AUPRC 0.062 events 2 det 0
+  fold rel_H2 rule: tracked_1s low     h05/traj_05        n  2547 pos 0.31 AUROC 0.670 AUPRC 0.532 events 7 det 0
+  fold rel_H2 rule: tracked_1s low     h05/traj_06        n  2926 pos 0.05 AUROC 0.768 AUPRC 0.212 events 3 det 1
+  fold rel_H2 rule: tracked_1s low     nolcn/traj_01      n  2288 pos 0.33 AUROC 0.686 AUPRC 0.538 events 8 det 0
+  fold rel_H2 rule: tracked_1s low     nolcn/traj_02      n  3271 pos 0.16 AUROC 0.664 AUPRC 0.300 events 9 det 0
+  fold rel_H2 rule: tracked_1s low     nolcn/traj_03      n  3156 pos 0.21 AUROC 0.481 AUPRC 0.199 events 10 det 0
+  fold rel_H2 rule: tracked_1s low     nolcn/traj_04      n  2792 pos 0.03 AUROC 0.682 AUPRC 0.036 events 1 det 0
+  fold rel_H2 rule: tracked_1s low     nolcn/traj_05      n  2774 pos 0.39 AUROC 0.693 AUPRC 0.605 events 12 det 3
+  fold rel_H2 rule: tracked_1s low     nolcn/traj_06      n  3039 pos 0.13 AUROC 0.617 AUPRC 0.179 events 7 det 2
+  held rel_H2 rule: tracked_1s low     h05/mclab_1        n  7759 pos 0.15 AUROC 0.581 AUPRC 0.269 events 15 det 0
+  held rel_H2 rule: tracked_1s low     h05/mclab_2        n  6105 pos 0.03 AUROC 0.657 AUPRC 0.284 events 3 det 1
+  held rel_H2 rule: tracked_1s low     h05/fjord_1        n  6234 pos 0.03 AUROC 0.745 AUPRC 0.387 events 3 det 1
+  held rel_H2 rule: tracked_1s low     h05/fjord_2        n  9966 pos 0.07 AUROC 0.568 AUPRC 0.136 events 11 det 1
+  held rel_H2 rule: tracked_1s low     h05/fjord_3        n  5382 pos 0.08 AUROC 0.637 AUPRC 0.140 events 8 det 2
+  held rel_H2 rule: tracked_1s low     h05/fjord_4        n  8156 pos 0.25 AUROC 0.598 AUPRC 0.360 events 26 det 2
+  held rel_H2 rule: tracked_1s low     h05/fjord_5        n  8779 pos 0.54 AUROC 0.579 AUPRC 0.616 events 35 det 2
+
+=== label rel_H5: threshold 7.58 cm/s, horizon 5 s ===
+  select logreg param=0.01: LOTO pooled AUROC 0.625 AUPRC 0.455
+  select logreg param=0.1: LOTO pooled AUROC 0.631 AUPRC 0.459
+  select logreg param=1.0: LOTO pooled AUROC 0.633 AUPRC 0.462
+  select gbt param=3: LOTO pooled AUROC 0.512 AUPRC 0.368
+  select gbt param=5: LOTO pooled AUROC 0.525 AUPRC 0.390
+  fold rel_H5 logreg C=1.0             h05/traj_01        n  2217 pos 0.55 AUROC 0.678 AUPRC 0.689 events 5 det 0
+  fold rel_H5 logreg C=1.0             h05/traj_02        n  3257 pos 0.25 AUROC 0.720 AUPRC 0.575 events 6 det 4
+  fold rel_H5 logreg C=1.0             h05/traj_03        n  3046 pos 0.35 AUROC 0.582 AUPRC 0.391 events 6 det 2
+  fold rel_H5 logreg C=1.0             h05/traj_04        n  2461 pos 0.09 AUROC 0.837 AUPRC 0.498 events 2 det 0
+  fold rel_H5 logreg C=1.0             h05/traj_05        n  2379 pos 0.50 AUROC 0.683 AUPRC 0.698 events 7 det 1
+  fold rel_H5 logreg C=1.0             h05/traj_06        n  2619 pos 0.13 AUROC 0.753 AUPRC 0.306 events 3 det 1
+  fold rel_H5 logreg C=1.0             nolcn/traj_01      n  2139 pos 0.54 AUROC 0.743 AUPRC 0.796 events 5 det 2
+  fold rel_H5 logreg C=1.0             nolcn/traj_02      n  3169 pos 0.32 AUROC 0.730 AUPRC 0.581 events 8 det 5
+  fold rel_H5 logreg C=1.0             nolcn/traj_03      n  3084 pos 0.39 AUROC 0.479 AUPRC 0.346 events 7 det 5
+  fold rel_H5 logreg C=1.0             nolcn/traj_04      n  2381 pos 0.05 AUROC 0.964 AUPRC 0.752 events 1 det 1
+  fold rel_H5 logreg C=1.0             nolcn/traj_05      n  3000 pos 0.60 AUROC 0.712 AUPRC 0.786 events 12 det 5
+  fold rel_H5 logreg C=1.0             nolcn/traj_06      n  2899 pos 0.28 AUROC 0.678 AUPRC 0.542 events 7 det 3
+  held rel_H5 logreg C=1.0             h05/mclab_1        n  7771 pos 0.26 AUROC 0.530 AUPRC 0.281 events 13 det 13
+  held rel_H5 logreg C=1.0             h05/mclab_2        n  6177 pos 0.06 AUROC 0.905 AUPRC 0.389 events 3 det 3
+  held rel_H5 logreg C=1.0             h05/fjord_1        n  6246 pos 0.05 AUROC 0.489 AUPRC 0.105 events 3 det 3
+  held rel_H5 logreg C=1.0             h05/fjord_2        n  9978 pos 0.11 AUROC 0.549 AUPRC 0.127 events 7 det 7
+  held rel_H5 logreg C=1.0             h05/fjord_3        n  5346 pos 0.17 AUROC 0.528 AUPRC 0.177 events 7 det 7
+  held rel_H5 logreg C=1.0             h05/fjord_4        n  8145 pos 0.40 AUROC 0.515 AUPRC 0.417 events 16 det 16
+  held rel_H5 logreg C=1.0             h05/fjord_5        n  8785 pos 0.72 AUROC 0.526 AUPRC 0.746 events 21 det 21
+  fold rel_H5 gbt depth=5              h05/traj_01        n  2217 pos 0.55 AUROC 0.534 AUPRC 0.564 events 5 det 0
+  fold rel_H5 gbt depth=5              h05/traj_02        n  3257 pos 0.25 AUROC 0.761 AUPRC 0.615 events 6 det 3
+  fold rel_H5 gbt depth=5              h05/traj_03        n  3046 pos 0.35 AUROC 0.550 AUPRC 0.407 events 6 det 1
+  fold rel_H5 gbt depth=5              h05/traj_04        n  2461 pos 0.09 AUROC 0.466 AUPRC 0.085 events 2 det 0
+  fold rel_H5 gbt depth=5              h05/traj_05        n  2379 pos 0.50 AUROC 0.658 AUPRC 0.679 events 7 det 1
+  fold rel_H5 gbt depth=5              h05/traj_06        n  2619 pos 0.13 AUROC 0.661 AUPRC 0.187 events 3 det 0
+  fold rel_H5 gbt depth=5              nolcn/traj_01      n  2139 pos 0.54 AUROC 0.578 AUPRC 0.656 events 5 det 1
+  fold rel_H5 gbt depth=5              nolcn/traj_02      n  3169 pos 0.32 AUROC 0.615 AUPRC 0.454 events 8 det 5
+  fold rel_H5 gbt depth=5              nolcn/traj_03      n  3084 pos 0.39 AUROC 0.491 AUPRC 0.377 events 7 det 3
+  fold rel_H5 gbt depth=5              nolcn/traj_04      n  2381 pos 0.05 AUROC 0.626 AUPRC 0.092 events 1 det 0
+  fold rel_H5 gbt depth=5              nolcn/traj_05      n  3000 pos 0.60 AUROC 0.600 AUPRC 0.670 events 12 det 1
+  fold rel_H5 gbt depth=5              nolcn/traj_06      n  2899 pos 0.28 AUROC 0.483 AUPRC 0.258 events 7 det 0
+  held rel_H5 gbt depth=5              h05/mclab_1        n  7771 pos 0.26 AUROC 0.550 AUPRC 0.315 events 13 det 0
+  held rel_H5 gbt depth=5              h05/mclab_2        n  6177 pos 0.06 AUROC 0.296 AUPRC 0.037 events 3 det 0
+  held rel_H5 gbt depth=5              h05/fjord_1        n  6246 pos 0.05 AUROC 0.285 AUPRC 0.032 events 3 det 0
+  held rel_H5 gbt depth=5              h05/fjord_2        n  9978 pos 0.11 AUROC 0.533 AUPRC 0.131 events 7 det 1
+  held rel_H5 gbt depth=5              h05/fjord_3        n  5346 pos 0.17 AUROC 0.567 AUPRC 0.278 events 7 det 4
+  held rel_H5 gbt depth=5              h05/fjord_4        n  8145 pos 0.40 AUROC 0.531 AUPRC 0.438 events 16 det 1
+  held rel_H5 gbt depth=5              h05/fjord_5        n  8785 pos 0.72 AUROC 0.452 AUPRC 0.720 events 21 det 8
+  fold rel_H5 rule: vision_healthy==0  h05/traj_01        n  2217 pos 0.55 AUROC 0.499 AUPRC 0.551 events 5 det 0
+  fold rel_H5 rule: vision_healthy==0  h05/traj_02        n  3257 pos 0.25 AUROC 0.500 AUPRC 0.250 events 6 det 0
+  fold rel_H5 rule: vision_healthy==0  h05/traj_03        n  3046 pos 0.35 AUROC 0.500 AUPRC 0.354 events 6 det 0
+  fold rel_H5 rule: vision_healthy==0  h05/traj_04        n  2461 pos 0.09 AUROC 0.481 AUPRC 0.092 events 2 det 0
+  fold rel_H5 rule: vision_healthy==0  h05/traj_05        n  2379 pos 0.50 AUROC 0.560 AUPRC 0.554 events 7 det 0
+  fold rel_H5 rule: vision_healthy==0  h05/traj_06        n  2619 pos 0.13 AUROC 0.524 AUPRC 0.137 events 3 det 0
+  fold rel_H5 rule: vision_healthy==0  nolcn/traj_01      n  2139 pos 0.54 AUROC 0.499 AUPRC 0.540 events 5 det 0
+  fold rel_H5 rule: vision_healthy==0  nolcn/traj_02      n  3169 pos 0.32 AUROC 0.500 AUPRC 0.316 events 8 det 0
+  fold rel_H5 rule: vision_healthy==0  nolcn/traj_03      n  3084 pos 0.39 AUROC 0.498 AUPRC 0.388 events 7 det 0
+  fold rel_H5 rule: vision_healthy==0  nolcn/traj_04      n  2381 pos 0.05 AUROC 0.487 AUPRC 0.055 events 1 det 0
+  fold rel_H5 rule: vision_healthy==0  nolcn/traj_05      n  3000 pos 0.60 AUROC 0.546 AUPRC 0.631 events 12 det 0
+  fold rel_H5 rule: vision_healthy==0  nolcn/traj_06      n  2899 pos 0.28 AUROC 0.510 AUPRC 0.285 events 7 det 0
+  held rel_H5 rule: vision_healthy==0  h05/mclab_1        n  7771 pos 0.26 AUROC 0.527 AUPRC 0.300 events 13 det 0
+  held rel_H5 rule: vision_healthy==0  h05/mclab_2        n  6177 pos 0.06 AUROC 0.535 AUPRC 0.119 events 3 det 0
+  held rel_H5 rule: vision_healthy==0  h05/fjord_1        n  6246 pos 0.05 AUROC 0.576 AUPRC 0.193 events 3 det 0
+  held rel_H5 rule: vision_healthy==0  h05/fjord_2        n  9978 pos 0.11 AUROC 0.500 AUPRC 0.113 events 7 det 0
+  held rel_H5 rule: vision_healthy==0  h05/fjord_3        n  5346 pos 0.17 AUROC 0.500 AUPRC 0.166 events 7 det 0
+  held rel_H5 rule: vision_healthy==0  h05/fjord_4        n  8145 pos 0.40 AUROC 0.509 AUPRC 0.410 events 16 det 0
+  held rel_H5 rule: vision_healthy==0  h05/fjord_5        n  8785 pos 0.72 AUROC 0.501 AUPRC 0.723 events 21 det 0
+  fold rel_H5 rule: gated_frac_1s high h05/traj_01        n  2217 pos 0.55 AUROC 0.537 AUPRC 0.528 events 5 det 0
+  fold rel_H5 rule: gated_frac_1s high h05/traj_02        n  3257 pos 0.25 AUROC 0.381 AUPRC 0.196 events 6 det 0
+  fold rel_H5 rule: gated_frac_1s high h05/traj_03        n  3046 pos 0.35 AUROC 0.436 AUPRC 0.331 events 6 det 1
+  fold rel_H5 rule: gated_frac_1s high h05/traj_04        n  2461 pos 0.09 AUROC 0.225 AUPRC 0.058 events 2 det 0
+  fold rel_H5 rule: gated_frac_1s high h05/traj_05        n  2379 pos 0.50 AUROC 0.601 AUPRC 0.594 events 7 det 2
+  fold rel_H5 rule: gated_frac_1s high h05/traj_06        n  2619 pos 0.13 AUROC 0.419 AUPRC 0.122 events 3 det 1
+  fold rel_H5 rule: gated_frac_1s high nolcn/traj_01      n  2139 pos 0.54 AUROC 0.495 AUPRC 0.501 events 5 det 0
+  fold rel_H5 rule: gated_frac_1s high nolcn/traj_02      n  3169 pos 0.32 AUROC 0.552 AUPRC 0.330 events 8 det 0
+  fold rel_H5 rule: gated_frac_1s high nolcn/traj_03      n  3084 pos 0.39 AUROC 0.520 AUPRC 0.394 events 7 det 0
+  fold rel_H5 rule: gated_frac_1s high nolcn/traj_04      n  2381 pos 0.05 AUROC 0.621 AUPRC 0.065 events 1 det 0
+  fold rel_H5 rule: gated_frac_1s high nolcn/traj_05      n  3000 pos 0.60 AUROC 0.721 AUPRC 0.790 events 12 det 6
+  fold rel_H5 rule: gated_frac_1s high nolcn/traj_06      n  2899 pos 0.28 AUROC 0.537 AUPRC 0.355 events 7 det 2
+  held rel_H5 rule: gated_frac_1s high h05/mclab_1        n  7771 pos 0.26 AUROC 0.478 AUPRC 0.272 events 13 det 1
+  held rel_H5 rule: gated_frac_1s high h05/mclab_2        n  6177 pos 0.06 AUROC 0.540 AUPRC 0.226 events 3 det 2
+  held rel_H5 rule: gated_frac_1s high h05/fjord_1        n  6246 pos 0.05 AUROC 0.579 AUPRC 0.237 events 3 det 1
+  held rel_H5 rule: gated_frac_1s high h05/fjord_2        n  9978 pos 0.11 AUROC 0.565 AUPRC 0.164 events 7 det 0
+  held rel_H5 rule: gated_frac_1s high h05/fjord_3        n  5346 pos 0.17 AUROC 0.638 AUPRC 0.306 events 7 det 0
+  held rel_H5 rule: gated_frac_1s high h05/fjord_4        n  8145 pos 0.40 AUROC 0.510 AUPRC 0.482 events 16 det 1
+  held rel_H5 rule: gated_frac_1s high h05/fjord_5        n  8785 pos 0.72 AUROC 0.522 AUPRC 0.770 events 21 det 0
+  fold rel_H5 rule: tracked_1s low     h05/traj_01        n  2217 pos 0.55 AUROC 0.500 AUPRC 0.632 events 5 det 0
+  fold rel_H5 rule: tracked_1s low     h05/traj_02        n  3257 pos 0.25 AUROC 0.366 AUPRC 0.189 events 6 det 0
+  fold rel_H5 rule: tracked_1s low     h05/traj_03        n  3046 pos 0.35 AUROC 0.374 AUPRC 0.273 events 6 det 0
+  fold rel_H5 rule: tracked_1s low     h05/traj_04        n  2461 pos 0.09 AUROC 0.677 AUPRC 0.130 events 2 det 0
+  fold rel_H5 rule: tracked_1s low     h05/traj_05        n  2379 pos 0.50 AUROC 0.638 AUPRC 0.700 events 7 det 3
+  fold rel_H5 rule: tracked_1s low     h05/traj_06        n  2619 pos 0.13 AUROC 0.738 AUPRC 0.312 events 3 det 3
+  fold rel_H5 rule: tracked_1s low     nolcn/traj_01      n  2139 pos 0.54 AUROC 0.708 AUPRC 0.767 events 5 det 0
+  fold rel_H5 rule: tracked_1s low     nolcn/traj_02      n  3169 pos 0.32 AUROC 0.684 AUPRC 0.538 events 8 det 0
+  fold rel_H5 rule: tracked_1s low     nolcn/traj_03      n  3084 pos 0.39 AUROC 0.439 AUPRC 0.331 events 7 det 0
+  fold rel_H5 rule: tracked_1s low     nolcn/traj_04      n  2381 pos 0.05 AUROC 0.683 AUPRC 0.076 events 1 det 0
+  fold rel_H5 rule: tracked_1s low     nolcn/traj_05      n  3000 pos 0.60 AUROC 0.615 AUPRC 0.723 events 12 det 4
+  fold rel_H5 rule: tracked_1s low     nolcn/traj_06      n  2899 pos 0.28 AUROC 0.603 AUPRC 0.388 events 7 det 4
+  held rel_H5 rule: tracked_1s low     h05/mclab_1        n  7771 pos 0.26 AUROC 0.558 AUPRC 0.345 events 13 det 0
+  held rel_H5 rule: tracked_1s low     h05/mclab_2        n  6177 pos 0.06 AUROC 0.478 AUPRC 0.193 events 3 det 1
+  held rel_H5 rule: tracked_1s low     h05/fjord_1        n  6246 pos 0.05 AUROC 0.601 AUPRC 0.329 events 3 det 2
+  held rel_H5 rule: tracked_1s low     h05/fjord_2        n  9978 pos 0.11 AUROC 0.540 AUPRC 0.171 events 7 det 0
+  held rel_H5 rule: tracked_1s low     h05/fjord_3        n  5346 pos 0.17 AUROC 0.691 AUPRC 0.279 events 7 det 4
+  held rel_H5 rule: tracked_1s low     h05/fjord_4        n  8145 pos 0.40 AUROC 0.615 AUPRC 0.540 events 16 det 1
+  held rel_H5 rule: tracked_1s low     h05/fjord_5        n  8785 pos 0.72 AUROC 0.604 AUPRC 0.790 events 21 det 0
+
+ label                    model         set     n  pos_rate  auroc  auprc  events  detected  missed  event_recall  median_lead_s  fa_per_min  frame_recall     thr  oracle_event_recall  oracle_median_lead_s  oracle_fa_per_min
+abs_H2            logreg C=0.01    LOTO-all 38344     0.452  0.597  0.572     195        38     157         0.195          1.950       0.857         0.097   0.896                  NaN                   NaN                NaN
+abs_H2            logreg C=0.01 HELDOUT-all 52434     0.360  0.538  0.370     168       167       1         0.994          2.000       0.000         0.994   0.896                0.095                 1.675              0.966
+abs_H2              gbt depth=3    LOTO-all 38344     0.452  0.572  0.517     195        15     180         0.077          1.950       0.971         0.040   0.939                  NaN                   NaN                NaN
+abs_H2              gbt depth=3 HELDOUT-all 52434     0.360  0.594  0.443     168       121      47         0.720          2.000       5.045         0.568   0.939                0.030                 1.600              0.859
+abs_H2  rule: vision_healthy==0    LOTO-all 38344     0.452  0.502  0.453     195         0     195         0.000            NaN       0.000         0.000   0.000                  NaN                   NaN                NaN
+abs_H2  rule: vision_healthy==0 HELDOUT-all 52434     0.360  0.508  0.370     168         0     168         0.000            NaN       0.000         0.000   0.000                1.000                 2.000              0.000
+abs_H2 rule: gated_frac_1s high    LOTO-all 38344     0.452  0.522  0.459     195         9     186         0.046          1.800       0.857         0.012   0.320                  NaN                   NaN                NaN
+abs_H2 rule: gated_frac_1s high HELDOUT-all 52434     0.360  0.533  0.384     168         2     166         0.012          0.825       0.143         0.008   0.320                0.065                 1.100              0.966
+abs_H2     rule: tracked_1s low    LOTO-all 38344     0.452  0.498  0.461     195         8     187         0.041          1.700       0.971         0.007 -52.000                  NaN                   NaN                NaN
+abs_H2     rule: tracked_1s low HELDOUT-all 52434     0.360  0.637  0.514     168         6     162         0.036          1.425       0.286         0.023 -52.000                0.083                 1.850              0.966
+abs_H5            logreg C=0.01    LOTO-all 41349     0.662  0.633  0.786     151        46     105         0.305          4.825       0.945         0.132   0.915                  NaN                   NaN                NaN
+abs_H5            logreg C=0.01 HELDOUT-all 52619     0.511  0.531  0.508     108       108       0         1.000          5.000       0.000         0.996   0.915                0.213                 4.650              0.932
+abs_H5              gbt depth=3    LOTO-all 41349     0.662  0.586  0.721     151        18     133         0.119          4.800       0.945         0.039   0.979                  NaN                   NaN                NaN
+abs_H5              gbt depth=3 HELDOUT-all 52619     0.511  0.575  0.580     108        89      19         0.824          5.000       3.635         0.654   0.979                0.111                 3.375              0.932
+abs_H5  rule: vision_healthy==0    LOTO-all 41349     0.662  0.501  0.662     151         0     151         0.000            NaN       0.000         0.000   0.000                  NaN                   NaN                NaN
+abs_H5  rule: vision_healthy==0 HELDOUT-all 52619     0.511  0.506  0.516     108         0     108         0.000            NaN       0.000         0.000   0.000                1.000                 5.000              0.000
+abs_H5 rule: gated_frac_1s high    LOTO-all 41349     0.662  0.537  0.671     151        13     138         0.086          2.800       0.945         0.014   0.308                  NaN                   NaN                NaN
+abs_H5 rule: gated_frac_1s high HELDOUT-all 52619     0.511  0.533  0.530     108         4     104         0.037          1.225       0.186         0.007   0.308                0.074                 1.800              0.979
+abs_H5     rule: tracked_1s low    LOTO-all 41349     0.662  0.491  0.670     151        21     130         0.139          2.650       0.945         0.022 -57.048                  NaN                   NaN                NaN
+abs_H5     rule: tracked_1s low HELDOUT-all 52619     0.511  0.623  0.642     108         4     104         0.037          2.200       0.326         0.025 -57.048                0.120                 3.200              0.979
+rel_H2            logreg C=0.01    LOTO-all 34373     0.184  0.530  0.203      84         9      75         0.107          1.450       0.984         0.018   0.928                  NaN                   NaN                NaN
+rel_H2            logreg C=0.01 HELDOUT-all 52381     0.180  0.568  0.200     101       101       0         1.000          2.000       0.307         0.988   0.928                0.109                 1.500              0.894
+rel_H2              gbt depth=5    LOTO-all 34373     0.184  0.472  0.185      84         6      78         0.071          1.975       0.984         0.026   0.858                  NaN                   NaN                NaN
+rel_H2              gbt depth=5 HELDOUT-all 52381     0.180  0.522  0.186     101         7      94         0.069          1.650       1.621         0.009   0.858                0.020                 1.075              0.866
+rel_H2  rule: vision_healthy==0    LOTO-all 34373     0.184  0.513  0.192      84         0      84         0.000            NaN       0.000         0.000   0.000                  NaN                   NaN                NaN
+rel_H2  rule: vision_healthy==0 HELDOUT-all 52381     0.180  0.514  0.199     101         0     101         0.000            NaN       0.000         0.000   0.000                1.000                 2.000              0.000
+rel_H2 rule: gated_frac_1s high    LOTO-all 34373     0.184  0.518  0.207      84         7      77         0.083          2.000       0.941         0.027   0.308                  NaN                   NaN                NaN
+rel_H2 rule: gated_frac_1s high HELDOUT-all 52381     0.180  0.539  0.210     101         6      95         0.059          0.400       0.196         0.017   0.308                0.109                 1.150              0.922
+rel_H2     rule: tracked_1s low    LOTO-all 34373     0.184  0.505  0.215      84         6      78         0.071          1.850       0.984         0.016 -54.048                  NaN                   NaN                NaN
+rel_H2     rule: tracked_1s low HELDOUT-all 52381     0.180  0.639  0.301     101         9      92         0.089          1.350       0.475         0.038 -54.048                0.109                 1.550              0.950
+rel_H5             logreg C=1.0    LOTO-all 32651     0.336  0.633  0.462      69        29      40         0.420          4.200       0.885         0.055   0.951                  NaN                   NaN                NaN
+rel_H5             logreg C=1.0 HELDOUT-all 52448     0.273  0.568  0.300      70        70       0         1.000          5.000       0.283         0.989   0.951                0.143                 3.825              0.975
+rel_H5              gbt depth=5    LOTO-all 32651     0.336  0.525  0.390      69        15      54         0.217          3.850       0.885         0.068   0.954                  NaN                   NaN                NaN
+rel_H5              gbt depth=5 HELDOUT-all 52448     0.273  0.555  0.330      70        14      56         0.200          4.475       2.014         0.064   0.954                0.129                 3.750              0.944
+rel_H5  rule: vision_healthy==0    LOTO-all 32651     0.336  0.512  0.344      69         0      69         0.000            NaN       0.000         0.000   0.000                  NaN                   NaN                NaN
+rel_H5  rule: vision_healthy==0 HELDOUT-all 52448     0.273  0.509  0.285      70         0      70         0.000            NaN       0.000         0.000   0.000                1.000                 5.000              0.000
+rel_H5 rule: gated_frac_1s high    LOTO-all 32651     0.336  0.525  0.361      69        12      57         0.174          3.325       0.996         0.029   0.299                  NaN                   NaN                NaN
+rel_H5 rule: gated_frac_1s high HELDOUT-all 52448     0.273  0.536  0.296      70         5      65         0.071          0.300       0.283         0.012   0.299                0.086                 0.850              0.944
+rel_H5     rule: tracked_1s low    LOTO-all 32651     0.336  0.490  0.367      69        14      55         0.203          2.900       0.996         0.030 -57.048                  NaN                   NaN                NaN
+rel_H5     rule: tracked_1s low HELDOUT-all 52448     0.273  0.630  0.406      70         8      62         0.114          3.350       0.472         0.038 -57.048                0.157                 3.450              0.755
+done in 137 s

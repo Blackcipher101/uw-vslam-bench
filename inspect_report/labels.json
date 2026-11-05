@@ -1,0 +1,335 @@
+{
+ "note": "Self-labelled by an AI assistant from 800px frames (one annotator, not verified by a human). 'frames' = classes clearly present; 'unsure' = (frame,class) pairs excluded from metrics; everything else = absent. 'crops' = does the finding's crop (run_bus findings.json, F01..F30) really show its detector class; 'unsure' skipped.",
+ "frames": {
+  "kf_0000": [
+   "marine_growth",
+   "metal_structure",
+   "window"
+  ],
+  "kf_0005": [
+   "marine_growth",
+   "metal_structure",
+   "tire",
+   "window"
+  ],
+  "kf_0010": [
+   "corrosion",
+   "marine_growth",
+   "metal_structure",
+   "rope_cable"
+  ],
+  "kf_0015": [
+   "corrosion",
+   "marine_growth",
+   "metal_structure",
+   "rope_cable"
+  ],
+  "kf_0020": [
+   "metal_structure",
+   "rope_cable"
+  ],
+  "kf_0025": [
+   "marine_growth",
+   "metal_structure",
+   "tire"
+  ],
+  "kf_0030": [
+   "debris",
+   "marine_growth",
+   "metal_structure",
+   "rope_cable"
+  ],
+  "kf_0035": [
+   "debris"
+  ],
+  "kf_0040": [],
+  "kf_0045": [
+   "debris"
+  ],
+  "kf_0051": [],
+  "kf_0056": [
+   "metal_structure"
+  ],
+  "kf_0061": [
+   "marine_growth",
+   "metal_structure",
+   "tire"
+  ],
+  "kf_0066": [
+   "marine_growth",
+   "metal_structure",
+   "tire",
+   "window"
+  ],
+  "kf_0071": [
+   "marine_growth",
+   "metal_structure"
+  ],
+  "kf_0076": [
+   "marine_growth",
+   "metal_structure"
+  ],
+  "kf_0081": [
+   "marine_growth",
+   "metal_structure",
+   "tire"
+  ],
+  "kf_0086": [
+   "marine_growth",
+   "metal_structure",
+   "rope_cable",
+   "tire"
+  ],
+  "kf_0091": [
+   "marine_growth",
+   "metal_structure",
+   "rope_cable"
+  ],
+  "kf_0096": [
+   "marine_growth",
+   "metal_structure"
+  ],
+  "kf_0101": [
+   "marine_growth",
+   "metal_structure",
+   "rope_cable"
+  ],
+  "kf_0106": [
+   "corrosion",
+   "marine_growth",
+   "metal_structure",
+   "rope_cable"
+  ],
+  "kf_0111": [
+   "marine_growth",
+   "metal_structure"
+  ],
+  "kf_0116": [
+   "marine_growth",
+   "metal_structure",
+   "tire",
+   "window"
+  ],
+  "kf_0121": [
+   "marine_growth",
+   "metal_structure",
+   "tire",
+   "window"
+  ],
+  "kf_0126": [
+   "marine_growth",
+   "metal_structure"
+  ],
+  "kf_0131": [
+   "corrosion",
+   "marine_growth",
+   "metal_structure",
+   "rope_cable"
+  ],
+  "kf_0136": [
+   "metal_structure"
+  ],
+  "kf_0141": [
+   "marine_growth",
+   "metal_structure",
+   "tire",
+   "window"
+  ],
+  "kf_0146": [
+   "metal_structure",
+   "window"
+  ],
+  "kf_0152": [],
+  "kf_0157": [],
+  "kf_0162": [
+   "marine_growth",
+   "metal_structure"
+  ],
+  "kf_0167": [
+   "marine_growth",
+   "metal_structure",
+   "tire"
+  ],
+  "kf_0172": [
+   "marine_growth",
+   "metal_structure",
+   "rope_cable"
+  ],
+  "kf_0177": [],
+  "kf_0182": [
+   "marine_growth",
+   "metal_structure",
+   "rope_cable"
+  ],
+  "kf_0187": [
+   "corrosion",
+   "marine_growth",
+   "metal_structure",
+   "rope_cable"
+  ],
+  "kf_0192": [
+   "corrosion",
+   "marine_growth",
+   "metal_structure"
+  ],
+  "kf_0197": [
+   "hole_damage",
+   "marine_growth",
+   "metal_structure"
+  ]
+ },
+ "unsure": {
+  "kf_0000": [
+   "corrosion",
+   "rope_cable"
+  ],
+  "kf_0005": [
+   "corrosion"
+  ],
+  "kf_0010": [
+   "fish"
+  ],
+  "kf_0020": [
+   "marine_growth",
+   "tire",
+   "window"
+  ],
+  "kf_0025": [
+   "debris",
+   "rope_cable"
+  ],
+  "kf_0035": [
+   "marine_growth",
+   "rope_cable"
+  ],
+  "kf_0040": [
+   "debris",
+   "marine_growth",
+   "metal_structure"
+  ],
+  "kf_0045": [
+   "marine_growth",
+   "metal_structure"
+  ],
+  "kf_0051": [
+   "marine_growth",
+   "metal_structure"
+  ],
+  "kf_0056": [
+   "marine_growth"
+  ],
+  "kf_0066": [
+   "corrosion"
+  ],
+  "kf_0071": [
+   "debris"
+  ],
+  "kf_0076": [
+   "debris",
+   "fish"
+  ],
+  "kf_0101": [
+   "corrosion",
+   "tire",
+   "window"
+  ],
+  "kf_0106": [
+   "tire"
+  ],
+  "kf_0111": [
+   "corrosion",
+   "tire",
+   "window"
+  ],
+  "kf_0126": [
+   "corrosion",
+   "rope_cable",
+   "tire"
+  ],
+  "kf_0131": [
+   "tire"
+  ],
+  "kf_0136": [
+   "corrosion",
+   "marine_growth",
+   "rope_cable",
+   "tire"
+  ],
+  "kf_0146": [
+   "fish",
+   "marine_growth",
+   "tire"
+  ],
+  "kf_0152": [
+   "hole_damage",
+   "marine_growth",
+   "metal_structure",
+   "window"
+  ],
+  "kf_0157": [
+   "debris",
+   "marine_growth"
+  ],
+  "kf_0162": [
+   "debris",
+   "tire"
+  ],
+  "kf_0167": [
+   "fish"
+  ],
+  "kf_0177": [
+   "debris",
+   "marine_growth"
+  ],
+  "kf_0182": [
+   "debris"
+  ],
+  "kf_0187": [
+   "crack",
+   "hole_damage",
+   "tire"
+  ],
+  "kf_0192": [
+   "crack",
+   "hole_damage",
+   "rope_cable",
+   "window"
+  ],
+  "kf_0197": [
+   "corrosion",
+   "crack"
+  ]
+ },
+ "crops": {
+  "F01": true,
+  "F02": "unsure",
+  "F03": false,
+  "F04": true,
+  "F05": true,
+  "F06": false,
+  "F07": "unsure",
+  "F08": false,
+  "F09": "unsure",
+  "F10": "unsure",
+  "F11": true,
+  "F12": true,
+  "F13": "unsure",
+  "F14": "unsure",
+  "F15": true,
+  "F16": "unsure",
+  "F17": false,
+  "F18": true,
+  "F19": "unsure",
+  "F20": false,
+  "F21": "unsure",
+  "F22": "unsure",
+  "F23": false,
+  "F24": true,
+  "F25": false,
+  "F26": false,
+  "F27": false,
+  "F28": "unsure",
+  "F29": "unsure",
+  "F30": "unsure"
+ }
+}

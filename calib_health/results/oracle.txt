@@ -1,0 +1,12 @@
+[oracle] stretch 40.0-100.0: pairs 154, feats 19152, s_stereo/s_gt median 1.088 (IQR 0.987-1.398)
+[oracle] intercept c: median -2.04 px (robust sd 5.49, se 0.040) => w_y = 0.255 deg
+[oracle]   disparity 0-15 px (n=758): median resid -11.05 px
+[oracle]   disparity 15-25 px (n=4376): median resid -2.96 px
+[oracle]   disparity 25-40 px (n=11011): median resid -1.90 px
+[oracle]   disparity 40-200 px (n=3007): median resid -0.24 px
+[oracle] stretch 105.0-165.0: pairs 175, feats 25086, s_stereo/s_gt median 1.122 (IQR 1.019-1.653)
+[oracle] intercept c: median -2.27 px (robust sd 5.85, se 0.037) => w_y = 0.285 deg
+[oracle]   disparity 0-15 px (n=1025): median resid -5.65 px
+[oracle]   disparity 15-25 px (n=5705): median resid -2.28 px
+[oracle]   disparity 25-40 px (n=14148): median resid -2.07 px
+[oracle]   disparity 40-200 px (n=4208): median resid -3.29 px

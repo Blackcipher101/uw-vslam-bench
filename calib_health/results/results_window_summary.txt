@@ -1,0 +1,5 @@
+window  n_win | zero: y mean  y sd(across windows)  x sd  z sd  false-alarm(abs) | y+-0.1: flag(diff)  y+-0.3: flag(diff) | x+0.2 flag z+0.2 flag (diff)
+ 10 s   18   | +0.134  0.094  0.002  0.030  0.67 (diff-mode FA 0.28) | 0.64  0.97 | 1.00 0.28
+ 20 s    9   | +0.109  0.044  0.001  0.010  0.56 (diff-mode FA 0.00) | 0.50  1.00 | 1.00 0.00
+ 30 s    6   | +0.118  0.030  0.001  0.011  1.00 (diff-mode FA 0.00) | 0.58  1.00 | 1.00 0.00
+ 60 s    3   | +0.108  0.008  0.001  0.005  1.00 (diff-mode FA 0.00) | 1.00  1.00 | 1.00 0.00

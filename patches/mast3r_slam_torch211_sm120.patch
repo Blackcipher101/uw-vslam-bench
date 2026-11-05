@@ -1,0 +1,53 @@
+diff --git a/mast3r_slam/backend/src/gn_kernels.cu b/mast3r_slam/backend/src/gn_kernels.cu
+index bf2d588..ffc668e 100644
+--- a/mast3r_slam/backend/src/gn_kernels.cu
++++ b/mast3r_slam/backend/src/gn_kernels.cu
+@@ -799,7 +799,7 @@ std::vector<torch::Tensor> gauss_newton_points_cuda(
+ 
+     // Termination criteria
+     // Need to specify this second argument otherwise ambiguous function call...
+-    delta_norm = torch::linalg::linalg_norm(dx, std::optional<c10::Scalar>(), {}, false, {});
++    delta_norm = at::linalg_norm(dx, std::optional<c10::Scalar>(), {}, false, {});
+     if (delta_norm.item<float>() < delta_thresh) {
+       break;
+     }
+@@ -1216,7 +1216,7 @@ std::vector<torch::Tensor> gauss_newton_rays_cuda(
+ 
+     // Termination criteria
+     // Need to specify this second argument otherwise ambiguous function call...
+-    delta_norm = torch::linalg::linalg_norm(dx, std::optional<c10::Scalar>(), {}, false, {});
++    delta_norm = at::linalg_norm(dx, std::optional<c10::Scalar>(), {}, false, {});
+     if (delta_norm.item<float>() < delta_thresh) {
+       break;
+     }
+@@ -1626,7 +1626,7 @@ std::vector<torch::Tensor> gauss_newton_calib_cuda(
+ 
+     // Termination criteria
+     // Need to specify this second argument otherwise ambiguous function call...
+-    delta_norm = torch::linalg::linalg_norm(dx, std::optional<c10::Scalar>(), {}, false, {});
++    delta_norm = at::linalg_norm(dx, std::optional<c10::Scalar>(), {}, false, {});
+     if (delta_norm.item<float>() < delta_thresh) {
+       break;
+     }
+diff --git a/setup.py b/setup.py
+index ee79545..cc444a4 100644
+--- a/setup.py
++++ b/setup.py
+@@ -26,14 +26,9 @@ if has_cuda:
+ 
+     sources.append("mast3r_slam/backend/src/gn_kernels.cu")
+     sources.append("mast3r_slam/backend/src/matching_kernels.cu")
+-    extra_compile_args["nvcc"] = [
+-        "-O3",
+-        "-gencode=arch=compute_60,code=sm_60",
+-        "-gencode=arch=compute_61,code=sm_61",
+-        "-gencode=arch=compute_70,code=sm_70",
+-        "-gencode=arch=compute_75,code=sm_75",
+-        "-gencode=arch=compute_80,code=sm_80",
+-        "-gencode=arch=compute_86,code=sm_86",
++    extra_compile_args["nvcc"] = ["-O3"] + [
++        f"-gencode=arch=compute_{a},code=sm_{a}"
++        for a in os.environ.get("MAST3R_SLAM_CUDA_ARCHS", "60 61 70 75 80 86").split()
+     ]
+     ext_modules = [
+         CUDAExtension(

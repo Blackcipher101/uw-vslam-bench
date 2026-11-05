@@ -1,0 +1,5 @@
+# MASt3R-SLAM on AFRL bus_outside: calibrated mode, frames already strided 2x by
+# mast3r_prepare.py (12.6 Hz -> 6.3 Hz), so no further subsampling here.
+inherit: "config/calib.yaml"
+dataset:
+  subsample: 1

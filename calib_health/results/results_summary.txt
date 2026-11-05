@@ -1,0 +1,70 @@
+== Residual of the GOOD in-water calibration as seen by the estimator (inj = 0), deg [x y z]
+  eval stretch 105-165: fused [0.001, 0.112, -0.006]  epi_y +0.124  mot_y +0.026
+  eval stretch 170-230: fused [0.002, 0.102, -0.002]  epi_y +0.114  mot_y -0.011
+  eval stretch 235-295: fused [0.001, 0.098, 0.004]  epi_y +0.101  mot_y +0.022
+  dev stretch 40-100: fused [0.002, 0.17, -0.014]
+
+== Per-case table (3 eval stretches): estimate on the injected axis
+case     inj_deg  est_mean  est_sd  shift_mean(est-est0)  err_vs_inj(shift-inj)  verdicts OK/CHECK/RECAL  truth
+x+0.1    +0.100   +0.101   0.001   +0.100                 -0.000                 0/3/0            CHECK
+x-0.1    -0.100   -0.099   0.001   -0.100                 +0.000                 0/3/0            CHECK
+x+0.2    +0.200   +0.201   0.001   +0.200                 -0.000                 0/0/3            RECALIBRATE
+x-0.2    -0.200   -0.199   0.001   -0.200                 +0.000                 0/0/3            RECALIBRATE
+x+0.3    +0.300   +0.301   0.001   +0.300                 -0.000                 0/0/3            RECALIBRATE
+x-0.3    -0.300   -0.299   0.001   -0.300                 +0.000                 0/0/3            RECALIBRATE
+x+0.5    +0.500   +0.501   0.001   +0.500                 -0.000                 0/0/3            RECALIBRATE
+x-0.5    -0.500   -0.499   0.001   -0.500                 +0.000                 0/0/3            RECALIBRATE
+y+0.1    +0.100   +0.204   0.006   +0.100                 -0.000                 0/2/1            CHECK
+y-0.1    -0.100   +0.004   0.006   -0.100                 +0.000                 3/0/0            CHECK
+y+0.2    +0.200   +0.304   0.006   +0.200                 -0.000                 0/0/3            CHECK
+y-0.2    -0.200   -0.096   0.006   -0.200                 +0.000                 0/3/0            CHECK
+y+0.3    +0.300   +0.404   0.006   +0.300                 -0.000                 0/0/3            RECALIBRATE
+y-0.3    -0.300   -0.196   0.006   -0.300                 +0.000                 0/3/0            RECALIBRATE
+y+0.5    +0.500   +0.603   0.006   +0.499                 -0.001                 0/0/3            RECALIBRATE
+y-0.5    -0.500   -0.395   0.006   -0.499                 +0.001                 0/0/3            RECALIBRATE
+z+0.1    +0.100   +0.099   0.004   +0.100                 +0.000                 0/3/0            OK
+z-0.1    -0.100   -0.101   0.004   -0.100                 -0.000                 0/3/0            OK
+z+0.2    +0.200   +0.199   0.004   +0.200                 +0.000                 0/3/0            OK
+z-0.2    -0.200   -0.201   0.004   -0.200                 -0.000                 0/3/0            OK
+z+0.3    +0.300   +0.299   0.004   +0.300                 +0.000                 0/3/0            CHECK
+z-0.3    -0.300   -0.301   0.004   -0.300                 -0.000                 0/3/0            CHECK
+z+0.5    +0.500   +0.499   0.004   +0.500                 +0.000                 0/3/0            CHECK
+z-0.5    -0.500   -0.501   0.004   -0.500                 -0.000                 0/3/0            CHECK
+air      -0.275   -0.171   0.006   -0.275                 +0.000                 0/3/0            RECALIBRATE
+   air other axes: x shift -0.051 (true -0.051)
+   air other axes: z shift +0.005 (true +0.005)
+
+== Per-axis accuracy over all non-zero levels x eval stretches (deg)
+axis  n   raw_bias  raw_rmse   diff_bias  diff_rmse   (raw = est-inj, diff = est-est0-inj; est0 = same-stretch zero-injection estimate)
+x     24  +0.001     0.002      -0.000      0.000
+y     24  +0.104     0.104      +0.000      0.000
+z     24  -0.001     0.004      +0.000      0.000
+
+== Off-axis leakage: mean |shift| of the non-injected axes (deg)
+  inject x: mean off-axis |shift| 0.000, max 0.001
+  inject y: mean off-axis |shift| 0.000, max 0.000
+  inject z: mean off-axis |shift| 0.000, max 0.001
+
+== Detection (verdict != OK = 'flag'); truth class from the injected value via the same thresholds
+injected |level|  axis   n   flag_rate  RECAL_rate  verdict==truth   [absolute mode]   flag_rate_diff-mode(ref=dev zero)
+0.1               x     6   1.00       0.00        1.00                             1.00
+0.1               y     6   0.50       0.17        0.33                             0.50
+0.1               z     6   1.00       0.00        0.00                             0.00
+0.2               x     6   1.00       1.00        1.00                             1.00
+0.2               y     6   1.00       0.50        0.50                             1.00
+0.2               z     6   1.00       0.00        0.00                             0.00
+0.3               x     6   1.00       1.00        1.00                             1.00
+0.3               y     6   1.00       0.50        0.50                             1.00
+0.3               z     6   1.00       0.00        1.00                             1.00
+0.5               x     6   1.00       1.00        1.00                             1.00
+0.5               y     6   1.00       1.00        1.00                             1.00
+0.5               z     6   1.00       0.00        1.00                             1.00
+false alarm at 0 injected: absolute mode 1.00 (Counter({'CHECK': 3})), differential mode 0.00
+
+== y-axis: static epipolar (epi) vs motion intercept (mot) vs fused, shift vs same-stretch zero (deg)
+  epi  : bias +0.000  rmse 0.000  max|err| 0.000  n=24
+  mot  : bias -0.000  rmse 0.003  max|err| 0.010  n=24
+  fused: bias +0.000  rmse 0.000  max|err| 0.001  n=24
+  bootstrap SE of y at zero: epi 0.017  mot 0.058
+
+== timing (s): extract_40_s=0.0, prepare_40_s=1.3, extract_105_s=7.4, prepare_105_s=1.1, extract_170_s=5.9, prepare_170_s=1.1, extract_235_s=22.4, prepare_235_s=1.0; mean estimate per case 9.7 s (boot=30)

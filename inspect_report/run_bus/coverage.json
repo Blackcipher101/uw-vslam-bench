@@ -1,0 +1,10 @@
+{
+ "n_stereo_pairs": 7334,
+ "n_keyframes": 198,
+ "n_keyframes_with_pose": 198,
+ "t_start": 1494876479.7215545,
+ "t_end": 1494877064.6834877,
+ "duration_s": 584.9619331359863,
+ "track_length_m": 64.50447458636168,
+ "traj_file": "/home/griffinlabs/uwvio/data/bus_outside_traj_s4_rep.tum"
+}

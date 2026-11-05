@@ -1,0 +1,18 @@
+{
+ "median_drift_mps": 0.02525840871452472,
+ "thresholds_mps": {
+  "abs": 0.05,
+  "rel": 0.07577522614357415
+ },
+ "chosen": {
+  "('abs_H2', 'logreg')": 0.01,
+  "('abs_H2', 'gbt')": 3,
+  "('abs_H5', 'logreg')": 0.01,
+  "('abs_H5', 'gbt')": 3,
+  "('rel_H2', 'logreg')": 0.01,
+  "('rel_H2', 'gbt')": 5,
+  "('rel_H5', 'logreg')": 1.0,
+  "('rel_H5', 'gbt')": 5,
+  "plot_thr": 0.9607780363292424
+ }
+}

@@ -1,0 +1,296 @@
+{
+ "summary": "Automatic draft covering 585 s, 198 keyframes, track length 65 m. The detector proposed 30 candidate findings, but none was confirmed by the visual verification step, so no finding is reported as confirmed. The candidates are listed below as unconfirmed for human review.",
+ "per_finding": {
+  "F01": {
+   "raw": "{\"shows_class\": false, \"description\": \"A dark, rounded object with a textured surface is partially visible against a mottled background.\", \"assessment\": \"The object appears to be a dark, irregularly shaped mass with no clear tire features.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "A dark, rounded object with a textured surface is partially visible against a mottled background.",
+   "assessment": "The object appears to be a dark, irregularly shaped mass with no clear tire features.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F02": {
+   "raw": "{\"shows_class\": false, \"description\": \"A blurry, shadow-like shape resembling a fish in murky water.\", \"assessment\": \"The shape is indistinct and lacks clear features to confirm it is a fish.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "A blurry, shadow-like shape resembling a fish in murky water.",
+   "assessment": "The shape is indistinct and lacks clear features to confirm it is a fish.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F03": {
+   "raw": "{\"shows_class\": false, \"description\": \"A blurry, indistinct shape in murky green water.\", \"assessment\": \"The object is too blurry and indistinct to be confidently identified as a fish.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "A blurry, indistinct shape in murky green water.",
+   "assessment": "The object is too blurry and indistinct to be confidently identified as a fish.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F04": {
+   "raw": "{\"shows_class\": false, \"description\": \"A dark, blurry object with a circular shape is visible underwater.\", \"assessment\": \"The object is indistinct and appears to be submerged in murky water.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "A dark, blurry object with a circular shape is visible underwater.",
+   "assessment": "The object is indistinct and appears to be submerged in murky water.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F05": {
+   "raw": "{\"shows_class\": false, \"description\": \"A dark, textured surface with patches of white and greenish material.\", \"assessment\": \"The surface appears covered with some form of biological growth, but it is not clearly identifiable as marine growth.\", \"severity\": \"low\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "A dark, textured surface with patches of white and greenish material.",
+   "assessment": "The surface appears covered with some form of biological growth, but it is not clearly identifiable as marine growth.",
+   "severity": "low",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F06": {
+   "raw": "{\"shows_class\": false, \"description\": \"A dark, murky underwater structure with faint text and a vertical edge.\", \"assessment\": \"The structure is heavily obscured by greenish water and sediment, making features indistinct.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "A dark, murky underwater structure with faint text and a vertical edge.",
+   "assessment": "The structure is heavily obscured by greenish water and sediment, making features indistinct.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F07": {
+   "raw": "{\"shows_class\": false, \"description\": \"The image shows a murky underwater environment with a large, textured object on the right.\", \"assessment\": \"The image is too blurry and indistinct to confirm marine growth.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "The image shows a murky underwater environment with a large, textured object on the right.",
+   "assessment": "The image is too blurry and indistinct to confirm marine growth.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F08": {
+   "raw": "{\"shows_class\": false, \"description\": \"An underwater scene with murky green water and a submerged object resembling a hose or cable.\", \"assessment\": \"The image shows no clear signs of marine growth.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "An underwater scene with murky green water and a submerged object resembling a hose or cable.",
+   "assessment": "The image shows no clear signs of marine growth.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F09": {
+   "raw": "{\"shows_class\": false, \"description\": \"A dark, blurry shape against a greenish, textured background.\", \"assessment\": \"The image is too blurry to identify any specific object or creature.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "A dark, blurry shape against a greenish, textured background.",
+   "assessment": "The image is too blurry to identify any specific object or creature.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F10": {
+   "raw": "{\"shows_class\": false, \"description\": \"The image shows a murky underwater environment with indistinct shapes and a dark object on the right.\", \"assessment\": \"The image is too blurry to confirm marine growth presence.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "The image shows a murky underwater environment with indistinct shapes and a dark object on the right.",
+   "assessment": "The image is too blurry to confirm marine growth presence.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F11": {
+   "raw": "{\"shows_class\": false, \"description\": \"An underwater view of a submerged shipwreck with greenish water and some light reflections.\", \"assessment\": \"The image shows a shipwreck covered in marine growth, but the growth is not clearly identifiable or extensive.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "An underwater view of a submerged shipwreck with greenish water and some light reflections.",
+   "assessment": "The image shows a shipwreck covered in marine growth, but the growth is not clearly identifiable or extensive.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F12": {
+   "raw": "{\"shows_class\": false, \"description\": \"An underwater view of a submerged structure with greenish water and faint rectangular shapes.\", \"assessment\": \"The image shows a murky underwater environment with indistinct shapes that may resemble windows but are not clearly identifiable as such.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "An underwater view of a submerged structure with greenish water and faint rectangular shapes.",
+   "assessment": "The image shows a murky underwater environment with indistinct shapes that may resemble windows but are not clearly identifiable as such.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F13": {
+   "raw": "{\"shows_class\": false, \"description\": \"A blurry, dark, circular shape with a central light spot against a light background.\", \"assessment\": \"The image is too blurry to identify any clear biological features.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "A blurry, dark, circular shape with a central light spot against a light background.",
+   "assessment": "The image is too blurry to identify any clear biological features.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F14": {
+   "raw": "{\"shows_class\": false, \"description\": \"The image shows a murky underwater environment with indistinct shapes and a faint line.\", \"assessment\": \"The image is too blurry to determine if marine growth is present.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "The image shows a murky underwater environment with indistinct shapes and a faint line.",
+   "assessment": "The image is too blurry to determine if marine growth is present.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F15": {
+   "raw": "{\"shows_class\": false, \"description\": \"A dark, blurry underwater image with a bright light source on the left and a vertical structure resembling a window frame.\", \"assessment\": \"The structure appears to be a window frame with significant surface degradation and obscured visibility.\", \"severity\": \"medium\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "A dark, blurry underwater image with a bright light source on the left and a vertical structure resembling a window frame.",
+   "assessment": "The structure appears to be a window frame with significant surface degradation and obscured visibility.",
+   "severity": "medium",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F16": {
+   "raw": "{\"shows_class\": false, \"description\": \"The image shows a murky underwater scene with indistinct shapes and greenish water.\", \"assessment\": \"The image is too blurry and murky to determine if marine growth is present.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "The image shows a murky underwater scene with indistinct shapes and greenish water.",
+   "assessment": "The image is too blurry and murky to determine if marine growth is present.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F17": {
+   "raw": "{\"shows_class\": false, \"description\": \"A blurry, green-tinted underwater image with a faint horizontal line.\", \"assessment\": \"The image is too blurry to confirm if the line is a crack.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "A blurry, green-tinted underwater image with a faint horizontal line.",
+   "assessment": "The image is too blurry to confirm if the line is a crack.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F18": {
+   "raw": "{\"shows_class\": false, \"description\": \"An underwater view of a submerged structure with greenish water and some surface texture.\", \"assessment\": \"The image shows a submerged structure with greenish water and some surface texture, but no clear marine growth is visible.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "An underwater view of a submerged structure with greenish water and some surface texture.",
+   "assessment": "The image shows a submerged structure with greenish water and some surface texture, but no clear marine growth is visible.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F19": {
+   "raw": "{\"shows_class\": false, \"description\": \"The image shows a murky underwater environment with scattered rocks and greenish sediment.\", \"assessment\": \"The scene appears to be a typical underwater seabed with no obvious signs of marine growth.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "The image shows a murky underwater environment with scattered rocks and greenish sediment.",
+   "assessment": "The scene appears to be a typical underwater seabed with no obvious signs of marine growth.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F20": {
+   "raw": "{\"shows_class\": false, \"description\": \"A faint, curved line is visible against a murky underwater background with a bright area on the right.\", \"assessment\": \"The line appears subtle and not clearly defined as a crack.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "A faint, curved line is visible against a murky underwater background with a bright area on the right.",
+   "assessment": "The line appears subtle and not clearly defined as a crack.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F21": {
+   "raw": "{\"shows_class\": false, \"description\": \"A blurry, dark, irregularly shaped object with a central circular feature.\", \"assessment\": \"The object appears indistinct and poorly defined due to low image resolution.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "A blurry, dark, irregularly shaped object with a central circular feature.",
+   "assessment": "The object appears indistinct and poorly defined due to low image resolution.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F22": {
+   "raw": "{\"shows_class\": false, \"description\": \"The image shows a murky underwater environment with indistinct shapes and textures.\", \"assessment\": \"The image is too blurry and murky to determine if marine growth is present.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "The image shows a murky underwater environment with indistinct shapes and textures.",
+   "assessment": "The image is too blurry and murky to determine if marine growth is present.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F23": {
+   "raw": "{\"shows_class\": false, \"description\": \"A blurry, dark shape is visible against a greenish underwater background.\", \"assessment\": \"The shape is indistinct and cannot be confidently identified as a fish.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "A blurry, dark shape is visible against a greenish underwater background.",
+   "assessment": "The shape is indistinct and cannot be confidently identified as a fish.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F24": {
+   "raw": "{\"shows_class\": false, \"description\": \"A murky underwater view with greenish lighting and indistinct shapes.\", \"assessment\": \"The image is heavily obscured by water turbidity, making it impossible to confirm if any structure is a window.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "A murky underwater view with greenish lighting and indistinct shapes.",
+   "assessment": "The image is heavily obscured by water turbidity, making it impossible to confirm if any structure is a window.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F25": {
+   "raw": "{\"shows_class\": false, \"description\": \"A blurry, light-colored shape against a dark background.\", \"assessment\": \"The image is too blurry to determine if it represents a hole or damage.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "A blurry, light-colored shape against a dark background.",
+   "assessment": "The image is too blurry to determine if it represents a hole or damage.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F26": {
+   "raw": "{\"shows_class\": false, \"description\": \"A thin, dark line runs horizontally across a light-colored surface with some texture.\", \"assessment\": \"The line appears to be a minor imperfection or shadow, not a clear crack.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "A thin, dark line runs horizontally across a light-colored surface with some texture.",
+   "assessment": "The line appears to be a minor imperfection or shadow, not a clear crack.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F27": {
+   "raw": "{\"shows_class\": false, \"description\": \"A blurry, dark shape against a lighter, textured background.\", \"assessment\": \"The image is indistinct and lacks clear features to identify debris.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "A blurry, dark shape against a lighter, textured background.",
+   "assessment": "The image is indistinct and lacks clear features to identify debris.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F28": {
+   "raw": "{\"shows_class\": false, \"description\": \"A blurry, greenish underwater shape that appears to be a fish-like form.\", \"assessment\": \"The image is too blurry and low-resolution to confirm if it is a fish.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "A blurry, greenish underwater shape that appears to be a fish-like form.",
+   "assessment": "The image is too blurry and low-resolution to confirm if it is a fish.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F29": {
+   "raw": "{\"shows_class\": false, \"description\": \"A dark, circular void surrounded by a greenish, textured background.\", \"assessment\": \"The image shows a dark circular area that may be a void or shadow, but no clear evidence of structural damage is visible.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "A dark, circular void surrounded by a greenish, textured background.",
+   "assessment": "The image shows a dark circular area that may be a void or shadow, but no clear evidence of structural damage is visible.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  },
+  "F30": {
+   "raw": "{\"shows_class\": false, \"description\": \"A blurry, dark, irregular shape with a central circular area.\", \"assessment\": \"The image is too blurry to determine if it is marine growth or another object.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": false,
+   "description": "A blurry, dark, irregular shape with a central circular area.",
+   "assessment": "The image is too blurry to determine if it is marine growth or another object.",
+   "severity": "none",
+   "status": "unconfirmed (rejected by VLM check)"
+  }
+ },
+ "faithfulness": {
+  "n_sentences": 3,
+  "n_ids_cited": 0,
+  "unknown_ids": [],
+  "absent_class_mentions": [],
+  "id_class_mismatches": [],
+  "cites_rejected": [],
+  "n_hallucinated": 0,
+  "findings_not_mentioned": [],
+  "count_claim_errors": [],
+  "summary_only_hallucinated": 0,
+  "assessment_hallucinated": 0,
+  "n_confirmed": 0
+ },
+ "meta": {
+  "source": "bus_outside",
+  "detector": "google/owlv2-base-patch16-ensemble",
+  "vlm": "Qwen/Qwen3-VL-4B-Instruct",
+  "thr": 0.15,
+  "mode": "base"
+ }
+}

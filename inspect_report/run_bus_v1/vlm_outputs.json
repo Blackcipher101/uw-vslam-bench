@@ -1,0 +1,322 @@
+{
+ "summary": "This automatic draft reports 10 confirmed findings from an underwater inspection covering 585 seconds and 65 meters of track. Confirmed findings include [F01], [F02], [F04], [F05], [F07], [F10], [F11], [F12], [F14], [F15], [F16], [F18], [F19], [F21], [F22], [F24], [F27], [F28], [F29], and [F30]. These are subject to human review for validation, as the system\u2019s output requires manual confirmation due to low visibility and ambiguous visual cues. The inspection detected marine growth, tires, fish, windows, debris, and structural damage, with varying confidence levels. No further detector candidates are included in this summary.",
+ "per_finding": {
+  "F01": {
+   "raw": "{\"answer\": \"yes\", \"description\": \"A dark, circular object with a textured surface, consistent with a tire.\", \"assessment\": \"The tire appears to be partially submerged in murky water with visible surface texture and some wear or debris.\", \"severity\": \"low\"}",
+   "parse_ok": true,
+   "shows_class": true,
+   "description": "A dark, circular object with a textured surface, consistent with a tire.",
+   "assessment": "The tire appears to be partially submerged in murky water with visible surface texture and some wear or debris.",
+   "severity": "low",
+   "status": "confirmed"
+  },
+  "F02": {
+   "raw": "{\"answer\": \"yes\", \"description\": \"A fish is visible swimming in the murky water.\", \"assessment\": \"The fish is discernible as a dark, elongated shape moving through the greenish, hazy water.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": true,
+   "description": "A fish is visible swimming in the murky water.",
+   "assessment": "The fish is discernible as a dark, elongated shape moving through the greenish, hazy water.",
+   "severity": "none",
+   "status": "confirmed"
+  },
+  "F03": {
+   "raw": "{\"answer\": \"unclear\", \"description\": \"The boxed region contains a blurry, indistinct shape in the murky water.\", \"assessment\": \"The shape is too indistinct to confidently identify as a fish due to water clarity.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": null,
+   "description": "The boxed region contains a blurry, indistinct shape in the murky water.",
+   "assessment": "The shape is too indistinct to confidently identify as a fish due to water clarity.",
+   "severity": "none",
+   "status": "unverified (VLM unclear/unparsed)"
+  },
+  "F04": {
+   "raw": "{\"answer\": \"yes\", \"description\": \"A dark, circular object resembling a tire or wheel is visible in the murky water.\", \"assessment\": \"The object is obscured by murkiness and appears heavily corroded or encrusted.\", \"severity\": \"medium\"}",
+   "parse_ok": true,
+   "shows_class": true,
+   "description": "A dark, circular object resembling a tire or wheel is visible in the murky water.",
+   "assessment": "The object is obscured by murkiness and appears heavily corroded or encrusted.",
+   "severity": "medium",
+   "status": "confirmed"
+  },
+  "F05": {
+   "raw": "{\"answer\": \"yes\", \"description\": \"A large, textured surface with white and dark patches, likely marine growth.\", \"assessment\": \"The surface is covered with a dense, irregular pattern of white and dark areas, consistent with biofouling.\", \"severity\": \"medium\"}",
+   "parse_ok": true,
+   "shows_class": true,
+   "description": "A large, textured surface with white and dark patches, likely marine growth.",
+   "assessment": "The surface is covered with a dense, irregular pattern of white and dark areas, consistent with biofouling.",
+   "severity": "medium",
+   "status": "confirmed"
+  },
+  "F06": {
+   "raw": "{\"answer\": \"unclear\", \"description\": \"The boxed region shows a dark, textured surface with some text and a metallic edge, possibly part of a submerged structure.\", \"assessment\": \"The surface is obscured by murky water and appears to be covered in marine growth or sediment.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": null,
+   "description": "The boxed region shows a dark, textured surface with some text and a metallic edge, possibly part of a submerged structure.",
+   "assessment": "The surface is obscured by murky water and appears to be covered in marine growth or sediment.",
+   "severity": "none",
+   "status": "unverified (VLM unclear/unparsed)"
+  },
+  "F07": {
+   "raw": "{\"answer\": \"yes\", \"description\": \"The boxed region shows a textured, uneven surface with visible growth patterns.\", \"assessment\": \"The surface appears covered in marine growth, with patches of white and dark areas suggesting biofouling.\", \"severity\": \"low\"}",
+   "parse_ok": true,
+   "shows_class": true,
+   "description": "The boxed region shows a textured, uneven surface with visible growth patterns.",
+   "assessment": "The surface appears covered in marine growth, with patches of white and dark areas suggesting biofouling.",
+   "severity": "low",
+   "status": "confirmed"
+  },
+  "F08": {
+   "raw": "{\"answer\": \"unclear\", \"description\": \"The boxed region contains a murky underwater environment with indistinct objects on the seabed.\", \"assessment\": \"The visibility is poor due to murkiness, making it hard to distinguish marine growth from other debris or sediment.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": null,
+   "description": "The boxed region contains a murky underwater environment with indistinct objects on the seabed.",
+   "assessment": "The visibility is poor due to murkiness, making it hard to distinguish marine growth from other debris or sediment.",
+   "severity": "none",
+   "status": "unverified (VLM unclear/unparsed)"
+  },
+  "F09": {
+   "raw": "{\"answer\": \"unclear\", \"description\": \"A dark, elongated shape is visible in the murky water near the underwater structure.\", \"assessment\": \"The shape is indistinct due to low visibility and murky water, making it difficult to confirm if it is a fish.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": null,
+   "description": "A dark, elongated shape is visible in the murky water near the underwater structure.",
+   "assessment": "The shape is indistinct due to low visibility and murky water, making it difficult to confirm if it is a fish.",
+   "severity": "none",
+   "status": "unverified (VLM unclear/unparsed)"
+  },
+  "F10": {
+   "raw": "{\"answer\": \"yes\", \"description\": \"The boxed region shows a textured, uneven surface with visible marine growth.\", \"assessment\": \"The surface appears covered in a dense, fuzzy growth consistent with marine biofouling.\", \"severity\": \"medium\"}",
+   "parse_ok": true,
+   "shows_class": true,
+   "description": "The boxed region shows a textured, uneven surface with visible marine growth.",
+   "assessment": "The surface appears covered in a dense, fuzzy growth consistent with marine biofouling.",
+   "severity": "medium",
+   "status": "confirmed"
+  },
+  "F11": {
+   "raw": "{\"answer\": \"yes\", \"description\": \"The boxed region shows a submerged shipwreck covered in marine growth.\", \"assessment\": \"The surface is heavily encrusted with what appears to be marine growth, including barnacles and sediment, giving it a rough, textured appearance.\", \"severity\": \"low\"}",
+   "parse_ok": true,
+   "shows_class": true,
+   "description": "The boxed region shows a submerged shipwreck covered in marine growth.",
+   "assessment": "The surface is heavily encrusted with what appears to be marine growth, including barnacles and sediment, giving it a rough, textured appearance.",
+   "severity": "low",
+   "status": "confirmed"
+  },
+  "F12": {
+   "raw": "{\"answer\": \"yes\", \"description\": \"The boxed region shows a window with three rectangular panes, one central and two side ones, viewed through murky water.\", \"assessment\": \"The window is obscured by sediment and low visibility, but its rectangular shape and arrangement are discernible.\", \"severity\": \"low\"}",
+   "parse_ok": true,
+   "shows_class": true,
+   "description": "The boxed region shows a window with three rectangular panes, one central and two side ones, viewed through murky water.",
+   "assessment": "The window is obscured by sediment and low visibility, but its rectangular shape and arrangement are discernible.",
+   "severity": "low",
+   "status": "confirmed"
+  },
+  "F13": {
+   "raw": "{\"answer\": \"unclear\", \"description\": \"A dark, irregularly shaped object with a central light spot is visible in the murky water.\", \"assessment\": \"The object is indistinct and lacks clear features to confirm it is a fish.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": null,
+   "description": "A dark, irregularly shaped object with a central light spot is visible in the murky water.",
+   "assessment": "The object is indistinct and lacks clear features to confirm it is a fish.",
+   "severity": "none",
+   "status": "unverified (VLM unclear/unparsed)"
+  },
+  "F14": {
+   "raw": "{\"answer\": \"yes\", \"description\": \"The boxed region shows a textured, uneven surface covered with marine growth.\", \"assessment\": \"The surface appears covered in a dense, irregular growth consistent with marine organisms.\", \"severity\": \"medium\"}",
+   "parse_ok": true,
+   "shows_class": true,
+   "description": "The boxed region shows a textured, uneven surface covered with marine growth.",
+   "assessment": "The surface appears covered in a dense, irregular growth consistent with marine organisms.",
+   "severity": "medium",
+   "status": "confirmed"
+  },
+  "F15": {
+   "raw": "{\"answer\": \"yes\", \"description\": \"A dark, rectangular opening with a visible frame, likely a window.\", \"assessment\": \"The window frame appears corroded and covered in marine growth or sediment.\", \"severity\": \"medium\"}",
+   "parse_ok": true,
+   "shows_class": true,
+   "description": "A dark, rectangular opening with a visible frame, likely a window.",
+   "assessment": "The window frame appears corroded and covered in marine growth or sediment.",
+   "severity": "medium",
+   "status": "confirmed"
+  },
+  "F16": {
+   "raw": "{\"answer\": \"yes\", \"description\": \"The boxed region shows a textured, greenish surface covered with marine growth.\", \"assessment\": \"The surface appears covered in a dense, fuzzy growth consistent with marine algae or biofouling.\", \"severity\": \"low\"}",
+   "parse_ok": true,
+   "shows_class": true,
+   "description": "The boxed region shows a textured, greenish surface covered with marine growth.",
+   "assessment": "The surface appears covered in a dense, fuzzy growth consistent with marine algae or biofouling.",
+   "severity": "low",
+   "status": "confirmed"
+  },
+  "F17": {
+   "raw": "{\"answer\": \"unclear\", \"description\": \"A thin, dark line is visible in the murky water.\", \"assessment\": \"The line is faint and indistinct due to water turbidity, making it hard to determine if it is a crack or just a shadow or debris.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": null,
+   "description": "A thin, dark line is visible in the murky water.",
+   "assessment": "The line is faint and indistinct due to water turbidity, making it hard to determine if it is a crack or just a shadow or debris.",
+   "severity": "none",
+   "status": "unverified (VLM unclear/unparsed)"
+  },
+  "F18": {
+   "raw": "{\"answer\": \"yes\", \"description\": \"The boxed region shows a textured, greenish surface covered with marine growth.\", \"assessment\": \"The surface is heavily encrusted with what appears to be marine growth, including algae and possibly barnacles, under murky water conditions.\", \"severity\": \"medium\"}",
+   "parse_ok": true,
+   "shows_class": true,
+   "description": "The boxed region shows a textured, greenish surface covered with marine growth.",
+   "assessment": "The surface is heavily encrusted with what appears to be marine growth, including algae and possibly barnacles, under murky water conditions.",
+   "severity": "medium",
+   "status": "confirmed"
+  },
+  "F19": {
+   "raw": "{\"answer\": \"yes\", \"description\": \"The boxed region shows a green, textured surface covered in marine growth.\", \"assessment\": \"The surface is covered in dense, greenish marine growth, likely algae or biofouling, with some rocks visible.\", \"severity\": \"low\"}",
+   "parse_ok": true,
+   "shows_class": true,
+   "description": "The boxed region shows a green, textured surface covered in marine growth.",
+   "assessment": "The surface is covered in dense, greenish marine growth, likely algae or biofouling, with some rocks visible.",
+   "severity": "low",
+   "status": "confirmed"
+  },
+  "F20": {
+   "raw": "{\"answer\": \"unclear\", \"description\": \"A thin, curved line extending from the wreck's surface into the murky water.\", \"assessment\": \"The line is faint and indistinct, making it difficult to determine if it is a crack or another feature.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": null,
+   "description": "A thin, curved line extending from the wreck's surface into the murky water.",
+   "assessment": "The line is faint and indistinct, making it difficult to determine if it is a crack or another feature.",
+   "severity": "none",
+   "status": "unverified (VLM unclear/unparsed)"
+  },
+  "F21": {
+   "raw": "{\"answer\": \"yes\", \"description\": \"A dark, irregularly shaped object attached to a vertical surface.\", \"assessment\": \"The object appears to be a piece of debris with a somewhat rounded, possibly organic or corroded form.\", \"severity\": \"low\"}",
+   "parse_ok": true,
+   "shows_class": true,
+   "description": "A dark, irregularly shaped object attached to a vertical surface.",
+   "assessment": "The object appears to be a piece of debris with a somewhat rounded, possibly organic or corroded form.",
+   "severity": "low",
+   "status": "confirmed"
+  },
+  "F22": {
+   "raw": "{\"answer\": \"yes\", \"description\": \"The boxed region shows a textured, uneven surface with visible growth.\", \"assessment\": \"The surface appears covered in a dense, fuzzy growth consistent with marine growth.\", \"severity\": \"medium\"}",
+   "parse_ok": true,
+   "shows_class": true,
+   "description": "The boxed region shows a textured, uneven surface with visible growth.",
+   "assessment": "The surface appears covered in a dense, fuzzy growth consistent with marine growth.",
+   "severity": "medium",
+   "status": "confirmed"
+  },
+  "F23": {
+   "raw": "{\"answer\": \"unclear\", \"description\": \"The boxed region contains a dark, indistinct shape in murky water.\", \"assessment\": \"The shape is too blurry to identify as a fish due to water turbidity.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": null,
+   "description": "The boxed region contains a dark, indistinct shape in murky water.",
+   "assessment": "The shape is too blurry to identify as a fish due to water turbidity.",
+   "severity": "none",
+   "status": "unverified (VLM unclear/unparsed)"
+  },
+  "F24": {
+   "raw": "{\"answer\": \"yes\", \"description\": \"A window-like opening with a bright green glow behind it, framed by dark, murky water.\", \"assessment\": \"The window is obscured by murky water and sediment, with visible greenish light filtering through.\", \"severity\": \"low\"}",
+   "parse_ok": true,
+   "shows_class": true,
+   "description": "A window-like opening with a bright green glow behind it, framed by dark, murky water.",
+   "assessment": "The window is obscured by murky water and sediment, with visible greenish light filtering through.",
+   "severity": "low",
+   "status": "confirmed"
+  },
+  "F25": {
+   "raw": "{\"answer\": \"unclear\", \"description\": \"A small, rectangular, light-colored object in a dark corner.\", \"assessment\": \"The object's shape and texture are indistinct due to low light and murky water.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": null,
+   "description": "A small, rectangular, light-colored object in a dark corner.",
+   "assessment": "The object's shape and texture are indistinct due to low light and murky water.",
+   "severity": "none",
+   "status": "unverified (VLM unclear/unparsed)"
+  },
+  "F26": {
+   "raw": "{\"answer\": \"unclear\", \"description\": \"A thin, dark line running horizontally across the image.\", \"assessment\": \"The line is faint and indistinct against the murky background, making it hard to determine if it's a crack or just a shadow or artifact.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": null,
+   "description": "A thin, dark line running horizontally across the image.",
+   "assessment": "The line is faint and indistinct against the murky background, making it hard to determine if it's a crack or just a shadow or artifact.",
+   "severity": "none",
+   "status": "unverified (VLM unclear/unparsed)"
+  },
+  "F27": {
+   "raw": "{\"answer\": \"yes\", \"description\": \"A small, dark, irregularly shaped object on the seafloor.\", \"assessment\": \"The object appears to be a small, dark, irregularly shaped object lying on the seafloor.\", \"severity\": \"low\"}",
+   "parse_ok": true,
+   "shows_class": true,
+   "description": "A small, dark, irregularly shaped object on the seafloor.",
+   "assessment": "The object appears to be a small, dark, irregularly shaped object lying on the seafloor.",
+   "severity": "low",
+   "status": "confirmed"
+  },
+  "F28": {
+   "raw": "{\"answer\": \"yes\", \"description\": \"A fish is swimming near the wall in murky water.\", \"assessment\": \"The fish is visible as a blurred, elongated shape moving through the green-tinted water.\", \"severity\": \"none\"}",
+   "parse_ok": true,
+   "shows_class": true,
+   "description": "A fish is swimming near the wall in murky water.",
+   "assessment": "The fish is visible as a blurred, elongated shape moving through the green-tinted water.",
+   "severity": "none",
+   "status": "confirmed"
+  },
+  "F29": {
+   "raw": "{\"answer\": \"yes\", \"description\": \"A dark, circular opening in a corroded metal surface.\", \"assessment\": \"The region shows a dark, circular opening that appears to be a hole or damaged section of the metal structure.\", \"severity\": \"medium\"}",
+   "parse_ok": true,
+   "shows_class": true,
+   "description": "A dark, circular opening in a corroded metal surface.",
+   "assessment": "The region shows a dark, circular opening that appears to be a hole or damaged section of the metal structure.",
+   "severity": "medium",
+   "status": "confirmed"
+  },
+  "F30": {
+   "raw": "{\"answer\": \"yes\", \"description\": \"A dark, textured growth on a submerged surface.\", \"assessment\": \"The growth appears dense and irregular, consistent with marine biofouling.\", \"severity\": \"medium\"}",
+   "parse_ok": true,
+   "shows_class": true,
+   "description": "A dark, textured growth on a submerged surface.",
+   "assessment": "The growth appears dense and irregular, consistent with marine biofouling.",
+   "severity": "medium",
+   "status": "confirmed"
+  }
+ },
+ "faithfulness": {
+  "n_sentences": 25,
+  "n_ids_cited": 20,
+  "unknown_ids": [],
+  "absent_class_mentions": [
+   {
+    "cls": "corrosion",
+    "sentence": "The object is obscured by murkiness and appears heavily corroded or encrusted.",
+    "finding": "F04"
+   },
+   {
+    "cls": "corrosion",
+    "sentence": "The window frame appears corroded and covered in marine growth or sediment.",
+    "finding": "F15"
+   },
+   {
+    "cls": "corrosion",
+    "sentence": "The object appears to be a piece of debris with a somewhat rounded, possibly organic or corroded form.",
+    "finding": "F21"
+   },
+   {
+    "cls": "metal_structure",
+    "sentence": "The region shows a dark, circular opening that appears to be a hole or damaged section of the metal structure.",
+    "finding": "F29"
+   }
+  ],
+  "id_class_mismatches": [],
+  "cites_rejected": [],
+  "n_hallucinated": 5,
+  "findings_not_mentioned": [],
+  "count_claim_errors": [
+   {
+    "claimed": 10,
+    "actual": 20
+   }
+  ],
+  "summary_only_hallucinated": 1,
+  "assessment_hallucinated": 4,
+  "n_confirmed": 20
+ },
+ "meta": {
+  "source": "bus_outside",
+  "detector": "google/owlv2-base-patch16-ensemble",
+  "vlm": "Qwen/Qwen3-VL-4B-Instruct (context verifier)",
+  "thr": 0.15,
+  "mode": "base"
+ }
+}

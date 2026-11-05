@@ -1,0 +1,32 @@
+{"stage": "load_vlm", "seconds": 6.7144013829529285}
+{"stage": "vlm_finding", "seconds": 3.145760269020684, "id": "F01"}
+{"stage": "vlm_finding", "seconds": 2.633463566075079, "id": "F02"}
+{"stage": "vlm_finding", "seconds": 2.7658118820982054, "id": "F03"}
+{"stage": "vlm_finding", "seconds": 2.7659933969844133, "id": "F04"}
+{"stage": "vlm_finding", "seconds": 2.900511002051644, "id": "F05"}
+{"stage": "vlm_finding", "seconds": 3.1226715210359544, "id": "F06"}
+{"stage": "vlm_finding", "seconds": 2.7641212069429457, "id": "F07"}
+{"stage": "vlm_finding", "seconds": 3.073764261091128, "id": "F08"}
+{"stage": "vlm_finding", "seconds": 3.1149265780113637, "id": "F09"}
+{"stage": "vlm_finding", "seconds": 2.636388147016987, "id": "F10"}
+{"stage": "vlm_finding", "seconds": 3.1193226049654186, "id": "F11"}
+{"stage": "vlm_finding", "seconds": 3.185351500986144, "id": "F12"}
+{"stage": "vlm_finding", "seconds": 2.8555715810507536, "id": "F13"}
+{"stage": "vlm_finding", "seconds": 2.5063854770269245, "id": "F14"}
+{"stage": "vlm_finding", "seconds": 2.4730872260406613, "id": "F15"}
+{"stage": "vlm_finding", "seconds": 2.7765523679554462, "id": "F16"}
+{"stage": "vlm_finding", "seconds": 3.176340053905733, "id": "F17"}
+{"stage": "vlm_finding", "seconds": 3.0877996559720486, "id": "F18"}
+{"stage": "vlm_finding", "seconds": 2.9452778769191355, "id": "F19"}
+{"stage": "vlm_finding", "seconds": 2.9868853230727836, "id": "F20"}
+{"stage": "vlm_finding", "seconds": 2.731556006008759, "id": "F21"}
+{"stage": "vlm_finding", "seconds": 2.459853929001838, "id": "F22"}
+{"stage": "vlm_finding", "seconds": 2.6290818150155246, "id": "F23"}
+{"stage": "vlm_finding", "seconds": 2.8644298079889268, "id": "F24"}
+{"stage": "vlm_finding", "seconds": 2.6344565079780295, "id": "F25"}
+{"stage": "vlm_finding", "seconds": 3.0788914369186386, "id": "F26"}
+{"stage": "vlm_finding", "seconds": 2.811009158962406, "id": "F27"}
+{"stage": "vlm_finding", "seconds": 2.584678963990882, "id": "F28"}
+{"stage": "vlm_finding", "seconds": 2.7162861470133066, "id": "F29"}
+{"stage": "vlm_finding", "seconds": 2.3220531300175935, "id": "F30"}
+{"stage": "vlm_summary", "seconds": 8.97021208202932}

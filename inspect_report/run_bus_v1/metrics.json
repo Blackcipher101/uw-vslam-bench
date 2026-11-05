@@ -1,0 +1,359 @@
+{
+ "n_labelled_frames": 40,
+ "thr": 0.15,
+ "runtime": {
+  "load_vlm": {
+   "n": 1,
+   "total_s": 6.7144013829529285,
+   "mean_s": 6.7144013829529285,
+   "median_s": 6.7144013829529285,
+   "p95_s": 6.7144013829529285
+  },
+  "vlm_finding": {
+   "n": 30,
+   "total_s": 84.86828240111936,
+   "mean_s": 2.8289427467039787,
+   "median_s": 2.7937807634589262,
+   "p95_s": 3.1625791507074608
+  },
+  "vlm_summary": {
+   "n": 1,
+   "total_s": 8.97021208202932,
+   "mean_s": 8.97021208202932,
+   "median_s": 8.97021208202932,
+   "p95_s": 8.97021208202932
+  }
+ },
+ "image_level": {
+  "base": {
+   "corrosion": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 6,
+    "tn": 26,
+    "support": 6,
+    "precision": null,
+    "recall": 0.0,
+    "f1": null
+   },
+   "marine_growth": {
+    "tp": 12,
+    "fp": 0,
+    "fn": 17,
+    "tn": 0,
+    "support": 29,
+    "precision": 1.0,
+    "recall": 0.41379310344827586,
+    "f1": 0.5853658536585366
+   },
+   "crack": {
+    "tp": 0,
+    "fp": 10,
+    "fn": 0,
+    "tn": 27,
+    "support": 0,
+    "precision": 0.0,
+    "recall": null,
+    "f1": null
+   },
+   "hole_damage": {
+    "tp": 0,
+    "fp": 6,
+    "fn": 1,
+    "tn": 30,
+    "support": 1,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "debris": {
+    "tp": 2,
+    "fp": 2,
+    "fn": 1,
+    "tn": 27,
+    "support": 3,
+    "precision": 0.5,
+    "recall": 0.6666666666666666,
+    "f1": 0.5714285714285715
+   },
+   "fish": {
+    "tp": 0,
+    "fp": 10,
+    "fn": 0,
+    "tn": 26,
+    "support": 0,
+    "precision": 0.0,
+    "recall": null,
+    "f1": null
+   },
+   "rope_cable": {
+    "tp": 5,
+    "fp": 0,
+    "fn": 7,
+    "tn": 22,
+    "support": 12,
+    "precision": 1.0,
+    "recall": 0.4166666666666667,
+    "f1": 0.5882352941176471
+   },
+   "metal_structure": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 31,
+    "tn": 3,
+    "support": 33,
+    "precision": 1.0,
+    "recall": 0.06060606060606061,
+    "f1": 0.1142857142857143
+   },
+   "window": {
+    "tp": 6,
+    "fp": 2,
+    "fn": 1,
+    "tn": 26,
+    "support": 7,
+    "precision": 0.75,
+    "recall": 0.8571428571428571,
+    "f1": 0.7999999999999999
+   },
+   "tire": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 8,
+    "tn": 20,
+    "support": 10,
+    "precision": 1.0,
+    "recall": 0.2,
+    "f1": 0.33333333333333337
+   },
+   "_micro": {
+    "tp": 29,
+    "fp": 30,
+    "fn": 72,
+    "precision": 0.4915254237288136,
+    "recall": 0.2871287128712871
+   }
+  },
+  "ens": {
+   "corrosion": {
+    "tp": 2,
+    "fp": 3,
+    "fn": 4,
+    "tn": 23,
+    "support": 6,
+    "precision": 0.4,
+    "recall": 0.3333333333333333,
+    "f1": 0.3636363636363636
+   },
+   "marine_growth": {
+    "tp": 17,
+    "fp": 0,
+    "fn": 12,
+    "tn": 0,
+    "support": 29,
+    "precision": 1.0,
+    "recall": 0.5862068965517241,
+    "f1": 0.7391304347826086
+   },
+   "crack": {
+    "tp": 0,
+    "fp": 17,
+    "fn": 0,
+    "tn": 20,
+    "support": 0,
+    "precision": 0.0,
+    "recall": null,
+    "f1": null
+   },
+   "hole_damage": {
+    "tp": 0,
+    "fp": 12,
+    "fn": 1,
+    "tn": 24,
+    "support": 1,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "debris": {
+    "tp": 3,
+    "fp": 4,
+    "fn": 0,
+    "tn": 25,
+    "support": 3,
+    "precision": 0.42857142857142855,
+    "recall": 1.0,
+    "f1": 0.6
+   },
+   "fish": {
+    "tp": 0,
+    "fp": 16,
+    "fn": 0,
+    "tn": 20,
+    "support": 0,
+    "precision": 0.0,
+    "recall": null,
+    "f1": null
+   },
+   "rope_cable": {
+    "tp": 8,
+    "fp": 0,
+    "fn": 4,
+    "tn": 22,
+    "support": 12,
+    "precision": 1.0,
+    "recall": 0.6666666666666666,
+    "f1": 0.8
+   },
+   "metal_structure": {
+    "tp": 4,
+    "fp": 0,
+    "fn": 29,
+    "tn": 3,
+    "support": 33,
+    "precision": 1.0,
+    "recall": 0.12121212121212122,
+    "f1": 0.21621621621621626
+   },
+   "window": {
+    "tp": 6,
+    "fp": 2,
+    "fn": 1,
+    "tn": 26,
+    "support": 7,
+    "precision": 0.75,
+    "recall": 0.8571428571428571,
+    "f1": 0.7999999999999999
+   },
+   "tire": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 8,
+    "tn": 20,
+    "support": 10,
+    "precision": 1.0,
+    "recall": 0.2,
+    "f1": 0.33333333333333337
+   },
+   "_micro": {
+    "tp": 42,
+    "fp": 54,
+    "fn": 59,
+    "precision": 0.4375,
+    "recall": 0.4158415841584158
+   }
+  }
+ },
+ "sweep": {
+  "base": {
+   "0.05": {
+    "tp": 63,
+    "fp": 103,
+    "fn": 38,
+    "precision": 0.3795180722891566,
+    "recall": 0.6237623762376238
+   },
+   "0.1": {
+    "tp": 47,
+    "fp": 62,
+    "fn": 54,
+    "precision": 0.43119266055045874,
+    "recall": 0.46534653465346537
+   },
+   "0.15": {
+    "tp": 29,
+    "fp": 30,
+    "fn": 72,
+    "precision": 0.4915254237288136,
+    "recall": 0.2871287128712871
+   },
+   "0.2": {
+    "tp": 20,
+    "fp": 17,
+    "fn": 81,
+    "precision": 0.5405405405405406,
+    "recall": 0.19801980198019803
+   },
+   "0.3": {
+    "tp": 6,
+    "fp": 5,
+    "fn": 95,
+    "precision": 0.5454545454545454,
+    "recall": 0.0594059405940594
+   },
+   "0.4": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 99,
+    "precision": 1.0,
+    "recall": 0.019801980198019802
+   }
+  },
+  "ens": {
+   "0.05": {
+    "tp": 75,
+    "fp": 139,
+    "fn": 26,
+    "precision": 0.35046728971962615,
+    "recall": 0.7425742574257426
+   },
+   "0.1": {
+    "tp": 60,
+    "fp": 80,
+    "fn": 41,
+    "precision": 0.42857142857142855,
+    "recall": 0.594059405940594
+   },
+   "0.15": {
+    "tp": 42,
+    "fp": 54,
+    "fn": 59,
+    "precision": 0.4375,
+    "recall": 0.4158415841584158
+   },
+   "0.2": {
+    "tp": 30,
+    "fp": 30,
+    "fn": 71,
+    "precision": 0.5,
+    "recall": 0.297029702970297
+   },
+   "0.3": {
+    "tp": 15,
+    "fp": 13,
+    "fn": 86,
+    "precision": 0.5357142857142857,
+    "recall": 0.1485148514851485
+   },
+   "0.4": {
+    "tp": 6,
+    "fp": 1,
+    "fn": 95,
+    "precision": 0.8571428571428571,
+    "recall": 0.0594059405940594
+   }
+  }
+ },
+ "faithfulness": {
+  "n_sentences": 25,
+  "n_ids_cited": 20,
+  "n_hallucinated": 5,
+  "summary_only_hallucinated": 1,
+  "n_unknown_ids": 0,
+  "n_absent_class_mentions": 4,
+  "n_cites_unconfirmed": 0,
+  "n_id_class_mismatches": 0
+ },
+ "vlm_parse_ok": "30/30",
+ "crop_eval": {
+  "n_labelled_crops": 17,
+  "vlm_recall_of_true_crops": 1.0,
+  "detector_crop_precision": 0.47058823529411764,
+  "vlm_judged": 9,
+  "vlm_unclear_or_unparsed": 8,
+  "accuracy_confirm_vs_not": 0.9411764705882353,
+  "vlm_verification_accuracy": 0.8888888888888888,
+  "precision_after_vlm_filter": 0.8888888888888888,
+  "n_kept_after_vlm_filter": 9
+ }
+}
